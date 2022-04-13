@@ -1,0 +1,1312 @@
+<!DOCTYPE html>
+		<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+		<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+		<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+		<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+
+		<head>
+			<meta charset="utf-8">
+			<meta http-equiv="X-UA-Compatible" content="IE=edge">
+			<title>Produit Bibabs - Biberon - Slider Revolution</title>
+			<meta name="description" content="Slider Revolution Example" />
+			<meta name="keywords" content="fullscreen image, grid layout, flexbox grid, transition" />
+			<meta name="author" content="ThemePunch" />
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+
+			<!-- LOAD JQUERY LIBRARY -->
+			<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.js"></script>
+			
+			<!-- LOADING FONTS AND ICONS -->
+			<link href="https://fonts.googleapis.com/css?family=Roboto:400&display=swap" rel="stylesheet" property="stylesheet" media="all" type="text/css" >
+
+			
+			<link rel="stylesheet" type="text/css" href="fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css">
+			<link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.css">
+			
+			<!-- REVOLUTION STYLE SHEETS -->
+			<link rel="stylesheet" type="text/css" href="css/rs6.css">
+			<!-- REVOLUTION LAYERS STYLES -->
+						<!-- REVOLUTION JS FILES -->
+			
+		<script>
+			window.RS_MODULES = window.RS_MODULES || {};
+			window.RS_MODULES.modules = window.RS_MODULES.modules || {};
+			window.RS_MODULES.waiting = window.RS_MODULES.waiting || [];
+			window.RS_MODULES.defered = true;
+			 			
+			window.RS_MODULES.waiting = window.RS_MODULES.waiting.concat([ "lottie","lottiejs"]);
+			window.RS_MODULES.moduleWaiting = window.RS_MODULES.moduleWaiting || {};
+			window.RS_MODULES.type = 'compiled';
+		</script>
+					<script src="js/rbtools.min.js"></script>
+							<script src="js/rs6.min.js"></script>
+							
+			<script>function setREVStartSize(e){
+			//window.requestAnimationFrame(function() {
+				window.RSIW = window.RSIW===undefined ? window.innerWidth : window.RSIW;
+				window.RSIH = window.RSIH===undefined ? window.innerHeight : window.RSIH;
+				try {
+					var pw = document.getElementById(e.c).parentNode.offsetWidth,
+						newh;
+					pw = pw===0 || isNaN(pw) ? window.RSIW : pw;
+					e.tabw = e.tabw===undefined ? 0 : parseInt(e.tabw);
+					e.thumbw = e.thumbw===undefined ? 0 : parseInt(e.thumbw);
+					e.tabh = e.tabh===undefined ? 0 : parseInt(e.tabh);
+					e.thumbh = e.thumbh===undefined ? 0 : parseInt(e.thumbh);
+					e.tabhide = e.tabhide===undefined ? 0 : parseInt(e.tabhide);
+					e.thumbhide = e.thumbhide===undefined ? 0 : parseInt(e.thumbhide);
+					e.mh = e.mh===undefined || e.mh=="" || e.mh==="auto" ? 0 : parseInt(e.mh,0);
+					if(e.layout==="fullscreen" || e.l==="fullscreen")
+						newh = Math.max(e.mh,window.RSIH);
+					else{
+						e.gw = Array.isArray(e.gw) ? e.gw : [e.gw];
+						for (var i in e.rl) if (e.gw[i]===undefined || e.gw[i]===0) e.gw[i] = e.gw[i-1];
+						e.gh = e.el===undefined || e.el==="" || (Array.isArray(e.el) && e.el.length==0)? e.gh : e.el;
+						e.gh = Array.isArray(e.gh) ? e.gh : [e.gh];
+						for (var i in e.rl) if (e.gh[i]===undefined || e.gh[i]===0) e.gh[i] = e.gh[i-1];
+											
+						var nl = new Array(e.rl.length),
+							ix = 0,
+							sl;
+						e.tabw = e.tabhide>=pw ? 0 : e.tabw;
+						e.thumbw = e.thumbhide>=pw ? 0 : e.thumbw;
+						e.tabh = e.tabhide>=pw ? 0 : e.tabh;
+						e.thumbh = e.thumbhide>=pw ? 0 : e.thumbh;
+						for (var i in e.rl) nl[i] = e.rl[i]<window.RSIW ? 0 : e.rl[i];
+						sl = nl[0];
+						for (var i in nl) if (sl>nl[i] && nl[i]>0) { sl = nl[i]; ix=i;}
+						var m = pw>(e.gw[ix]+e.tabw+e.thumbw) ? 1 : (pw-(e.tabw+e.thumbw)) / (e.gw[ix]);
+						newh =  (e.gh[ix] * m) + (e.tabh + e.thumbh);
+					}
+					var el = document.getElementById(e.c);
+					if (el!==null && el) el.style.height = newh+"px";
+					el = document.getElementById(e.c+"_wrapper");
+					if (el!==null && el) {
+						el.style.height = newh+"px";
+						el.style.display = "block";
+					}
+				} catch(e){
+					console.log("Failure at Presize of Slider:" + e)
+				}
+			//});
+		  };</script>
+
+			
+		</head>
+		
+		<body>
+		
+
+			<!-- START Produit Bibabs  Biberon REVOLUTION SLIDER 6.5.19 --><p class="rs-p-wp-fix"></p>
+			<rs-module-wrap id="rev_slider_1_1_wrapper" data-alias="demo1" data-source="gallery" style="visibility:hidden;background:transparent;padding:0;margin:0px auto;margin-top:0;margin-bottom:0;">
+				<rs-module id="rev_slider_1_1" style="" data-version="6.5.19">
+					<rs-slides>
+						<rs-slide style="position: absolute;" data-key="rs-1" data-title="treeShow" data-anim="ms:500ms;" data-in="o:0;" data-out="a:false;" data-sloop="s:20;e:10670;">
+							<img src="assets/transparent.png" alt="treeShow" class="rev-slidebg tp-rs-img" data-bg="c:rgba(255,255,255,0);" data-parallax="off" data-no-retina>
+<!--
+							--><rs-layer
+								id="slider-1-slide-1-layer-1" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:c;xo:-20px,-20px,-20px,0;yo:41px,41px,41px,46px;"
+								data-text="w:normal;s:20,20,20,7;l:0,0,0,9;"
+								data-dim="w:['102px','102px','102px','102px'];h:['102px','102px','102px','102px'];"
+								data-border="bos:solid;boc:#5ac8fa;bow:3px,3px,3px,3px;bor:50%,50%,50%,50%;"
+								data-frame_0="rY:360deg;"
+								data-frame_1="e:back.out;sp:500;sR:500;"
+								data-frame_999="o:0;st:w;sR:11000;"
+								data-tloop="u:true;"
+								style="z-index:18;box-shadow:rgba(0, 0, 0, 0.35) 0px 5px 15px;"
+							><img src="assets/dummy.png" alt="" class="tp-rs-img rs-lazyload" width="800" height="800" data-lazyload="assets/1B-e1649853592396.jpg" data-no-retina> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-1-slide-1-layer-6" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:c;xo:-180px,-180px,-180px,-160px;yo:141px,141px,141px,140px;"
+								data-text="w:normal;s:20,20,20,7;l:0,0,0,9;"
+								data-dim="w:['102px','102px','102px','102px'];h:['102px','102px','102px','102px'];"
+								data-border="bos:solid;boc:#5ac8fa;bow:3px,3px,3px,3px;bor:50%,50%,50%,50%;"
+								data-frame_0="rY:360deg;"
+								data-frame_1="e:back.out;st:800;sp:500;sR:1300;"
+								data-frame_999="o:0;st:w;sR:10200;"
+								data-tloop="u:true;"
+								style="z-index:17;box-shadow:rgba(0, 0, 0, 0.35) 0px 5px 15px;"
+							><img src="assets/dummy.png" alt="" class="tp-rs-img rs-lazyload" width="800" height="800" data-lazyload="assets/2-e1649853687129.jpg" data-no-retina> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-1-slide-1-layer-8" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:c;xo:140px,140px,140px,160px;yo:141px,141px,141px,140px;"
+								data-text="w:normal;s:20,20,20,7;l:0,0,0,9;"
+								data-dim="w:['102px','102px','102px','102px'];h:['102px','102px','102px','102px'];"
+								data-border="bos:solid;boc:#5ac8fa;bow:3px,3px,3px,3px;bor:50%,50%,50%,50%;"
+								data-frame_0="rY:360deg;"
+								data-frame_1="e:back.out;st:2400;sp:500;sR:2200;"
+								data-frame_999="o:0;st:w;sR:9300;"
+								data-tloop="u:true;"
+								style="z-index:15;box-shadow:rgba(0, 0, 0, 0.35) 0px 5px 15px;"
+							><img src="assets/dummy.png" alt="" class="tp-rs-img rs-lazyload" width="800" height="800" data-lazyload="assets/4-e1649853848131.jpg" data-no-retina> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-1-slide-1-layer-9" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:c;xo:-20px,-20px,-20px,0;yo:401px,401px,401px,400px;"
+								data-text="w:normal;s:20,20,20,7;l:0,0,0,9;"
+								data-dim="w:['102px','102px','102px','102px'];h:['102px','102px','102px','102px'];"
+								data-border="bos:solid;boc:#5ac8fa;bow:3px,3px,3px,3px;bor:50%,50%,50%,50%;"
+								data-frame_0="rY:360deg;"
+								data-frame_1="e:back.out;st:4000;sp:500;sR:4000;"
+								data-frame_999="o:0;st:w;sR:7500;"
+								data-tloop="u:true;"
+								style="z-index:13;box-shadow:rgba(0, 0, 0, 0.35) 0px 5px 15px;"
+							><img src="assets/dummy.png" alt="" class="tp-rs-img rs-lazyload" width="1613" height="1607" data-lazyload="assets/logo-bibabsArtboard-1@3x-100.jpg" data-no-retina> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-1-slide-1-layer-10" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:c;xo:140px,140px,140px,160px;yo:302px,302px,302px,300px;"
+								data-text="w:normal;s:20,20,20,7;l:0,0,0,9;"
+								data-dim="w:['102px','102px','102px','102px'];h:['102px','102px','102px','102px'];"
+								data-border="bos:solid;boc:#5ac8fa;bow:3px,3px,3px,3px;bor:50%,50%,50%,50%;"
+								data-frame_0="rY:360deg;"
+								data-frame_1="x:5px,5px,5px,1px;y:-9px,-9px,-9px,-3px;e:back.out;st:3200;sp:500;sR:3100;"
+								data-frame_999="o:0;st:w;sR:8400;"
+								data-tloop="u:true;"
+								style="z-index:14;box-shadow:rgba(0, 0, 0, 0.35) 0px 5px 15px;"
+							><img src="assets/dummy.png" alt="" class="tp-rs-img rs-lazyload" width="800" height="800" data-lazyload="assets/5-e1649853920713.jpg" data-no-retina> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-1-slide-1-layer-11" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:c;xo:-180px,-180px,-180px,-160px;yo:302px,302px,302px,300px;"
+								data-text="w:normal;s:20,20,20,7;l:0,0,0,9;"
+								data-dim="w:['102px','102px','102px','102px'];h:['102px','102px','102px','102px'];"
+								data-border="bos:solid;boc:#5ac8fa;bow:3px,3px,3px,3px;bor:50%,50%,50%,50%;"
+								data-frame_0="rY:360deg;"
+								data-frame_1="e:back.out;st:1600;sp:500;sR:1300;"
+								data-frame_999="o:0;st:w;sR:10200;"
+								data-tloop="u:true;"
+								style="z-index:16;box-shadow:rgba(0, 0, 0, 0.35) 0px 5px 15px;"
+							><img src="assets/dummy.png" alt="" class="tp-rs-img rs-lazyload" width="800" height="800" data-lazyload="assets/3-e1649853762288.jpg" data-no-retina> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-1-slide-1-layer-20" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:c;xo:-20px,-20px,-20px,0;yo:561px,561px,561px,560px;"
+								data-text="w:normal;s:20,20,20,7;l:0,0,0,9;"
+								data-dim="w:['102px','102px','102px','102px'];h:['102px','102px','102px','102px'];"
+								data-border="bos:solid;boc:#5ac8fa;bow:3px,3px,3px,3px;bor:50%,50%,50%,50%;"
+								data-frame_0="rY:360deg;"
+								data-frame_1="e:back.out;st:4800;sp:500;sR:4000;"
+								data-frame_999="o:0;st:w;sR:7500;"
+								data-tloop="u:true;"
+								style="z-index:12;box-shadow:rgba(0, 0, 0, 0.35) 0px 5px 15px;"
+							><img src="assets/dummy.png" alt="" class="tp-rs-img rs-lazyload" width="800" height="800" data-lazyload="assets/7-e1649854160840.jpg" data-no-retina> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-1-slide-1-layer-21" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:c;xo:-180px,-180px,-180px,-160px;yo:681px,681px,681px,680px;"
+								data-text="w:normal;s:20,20,20,7;l:0,0,0,9;"
+								data-dim="w:['102px','102px','102px','102px'];h:['102px','102px','102px','102px'];"
+								data-border="bos:solid;boc:#5ac8fa;bow:3px,3px,3px,3px;bor:50%,50%,50%,50%;"
+								data-frame_0="rY:360deg;"
+								data-frame_1="e:back.out;st:5500;sp:500;sR:4000;"
+								data-frame_999="o:0;st:w;sR:7500;"
+								data-tloop="u:true;"
+								style="z-index:11;box-shadow:rgba(0, 0, 0, 0.35) 0px 5px 15px;"
+							><img src="assets/dummy.png" alt="" class="tp-rs-img rs-lazyload" width="800" height="800" data-lazyload="assets/8-e1649854280549.jpg" data-no-retina> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-1-slide-1-layer-22" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:c;xo:140px,140px,140px,160px;yo:681px,681px,681px,680px;"
+								data-text="w:normal;s:20,20,20,7;l:0,0,0,9;"
+								data-dim="w:['102px','102px','102px','102px'];h:['102px','102px','102px','102px'];"
+								data-border="bos:solid;boc:#5ac8fa;bow:3px,3px,3px,3px;bor:50%,50%,50%,50%;"
+								data-frame_0="rY:360deg;"
+								data-frame_1="e:back.out;st:5500;sp:500;sR:4000;"
+								data-frame_999="o:0;st:w;sR:7500;"
+								data-tloop="u:true;"
+								style="z-index:10;box-shadow:rgba(0, 0, 0, 0.35) 0px 5px 15px;"
+							><img src="assets/dummy.png" alt="" class="tp-rs-img rs-lazyload" width="800" height="800" data-lazyload="assets/9-e1649854462685.jpg" data-no-retina> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-1-slide-1-layer-23" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:c;xo:-20px,-20px,-20px,0;yo:681px,681px,681px,680px;"
+								data-text="w:normal;s:20,20,20,7;l:0,0,0,9;"
+								data-dim="w:['102px','102px','102px','102px'];h:['102px','102px','102px','102px'];"
+								data-border="bos:solid;boc:#5ac8fa;bow:3px,3px,3px,3px;bor:50%,50%,50%,50%;"
+								data-frame_0="rY:360deg;"
+								data-frame_1="e:back.out;st:6300;sp:500;sR:4000;"
+								data-frame_999="o:0;st:w;sR:7500;"
+								data-tloop="u:true;"
+								style="z-index:9;box-shadow:rgba(0, 0, 0, 0.35) 0px 5px 15px;"
+							><img src="assets/dummy.png" alt="" class="tp-rs-img rs-lazyload" width="800" height="800" data-lazyload="assets/10-e1649854388355.jpg" data-no-retina> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-1-slide-1-layer-24" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:c;xo:-20px,-20px,-20px,0;yo:861px,861px,861px,820px;"
+								data-text="w:normal;s:20,20,20,7;l:0,0,0,9;"
+								data-dim="w:['102px','102px','102px','102px'];h:['102px','102px','102px','102px'];"
+								data-border="bos:solid;boc:#5ac8fa;bow:3px,3px,3px,3px;bor:50%,50%,50%,50%;"
+								data-frame_0="rY:360deg;"
+								data-frame_1="e:back.out;st:7100;sp:500;sR:4000;"
+								data-frame_999="o:0;st:w;sR:7500;"
+								data-tloop="u:true;"
+								style="z-index:8;box-shadow:rgba(0, 0, 0, 0.35) 0px 5px 15px;"
+							><img src="assets/dummy.png" alt="" class="tp-rs-img rs-lazyload" width="800" height="800" data-lazyload="assets/11-e1649854669799.jpg" data-no-retina> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-1-slide-1-layer-25" 
+								class="tp-shape tp-shapewrapper tp-lottie"
+								data-type="shape"
+								data-rsp_ch="on"
+								data-xy="xo:369px,369px,369px,20px;yo:228px,228px,228px,235px;"
+								data-text="w:normal;s:20,20,20,7;l:0,0,0,9;"
+								data-dim="w:142,142,142,126;h:85,85,85,75;"
+								data-frame_1="st:1300;"
+								data-frame_999="o:0;st:w;sR:11700;"
+								data-lottie='{"jsonUrl":"https:\/\/bibabs.fr\/wp-content\/uploads\/revslider\/lottie\/objects\/lottiecustoms\/95113-arrow-down.json","duration":2000,"autoplay":true,"respectTlStart":false,"endlessLoop":false,"reverse":false,"repeat":-1,"type":"svg","size":"contain","progressiveLoad":false,"hideTransparent":false,"interType":"disabled","lerp":0,"easeType":"default","continuePlaying":false,"scrollActions":false,"scrollLerp":0.1000000000000000055511151231257827021181583404541015625,"editorEnabled":true,"meta":{"w":1000,"h":1000,"layers":{"layer1":{"refId":[],"fields":[],"layerName":"Rotation","assetName":false},"layer2":{"refId":[],"fields":[{"type":"st","name":"Stroke 1","hasEffect":false,"level":3,"lKey":"layer2","val":[0.047058823529411764052809985514613799750804901123046875,0.0235294117647058820264049927573068998754024505615234375,0.0235294117647058820264049927573068998754024505615234375,1],"timeBased":false,"stroke":50,"layer":"Shape Layer 4","path":"layers.1.shapes.0.it.1"}],"layerName":"Shape Layer 4","assetName":false},"layer3":{"refId":[],"fields":[{"type":"st","name":"Stroke 1","hasEffect":false,"level":3,"lKey":"layer3","val":[0.047058823529411764052809985514613799750804901123046875,0.0235294117647058820264049927573068998754024505615234375,0.0235294117647058820264049927573068998754024505615234375,1],"timeBased":false,"stroke":50,"layer":"Shape Layer 2","path":"layers.2.shapes.0.it.1"}],"layerName":"Shape Layer 2","assetName":false},"layer4":{"refId":[],"fields":[{"type":"st","name":"Stroke 1","hasEffect":false,"level":3,"lKey":"layer4","val":[0.047058823529411764052809985514613799750804901123046875,0.0235294117647058820264049927573068998754024505615234375,0.0235294117647058820264049927573068998754024505615234375,1],"timeBased":false,"stroke":50,"layer":"Shape Layer 1","path":"layers.3.shapes.0.it.1"}],"layerName":"Shape Layer 1","assetName":false}},"ef":false,"refs":[],"changedGroup":{"colors":{"#558b6e":"#0c0606"},"strokes":{"74":50}},"url":"https:\/\/bibabs.fr\/wp-content\/uploads\/revslider\/lottie\/objects\/lottiecustoms\/95113-arrow-down.json","RSedited":true}}' 
+								style="z-index:28;"
+							> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-1-slide-1-layer-26" 
+								class="tp-shape tp-shapewrapper tp-lottie"
+								data-type="shape"
+								data-rsp_ch="on"
+								data-xy="xo:30px,30px,30px,80px;yo:61px,61px,61px,170px;"
+								data-text="w:normal;s:20,20,20,7;l:0,0,0,9;"
+								data-dim="w:142,142,142,126;h:85,85,85,75;"
+								data-frame_1="x:668px,668px,668px,256px;y:162px,162px,162px,61px;st:2900;"
+								data-frame_999="o:0;st:w;sR:11700;"
+								data-lottie='{"jsonUrl":"https:\/\/bibabs.fr\/wp-content\/uploads\/revslider\/lottie\/objects\/lottiecustoms\/95113-arrow-down.json","duration":2000,"autoplay":true,"respectTlStart":true,"endlessLoop":false,"reverse":false,"repeat":-1,"type":"svg","size":"contain","progressiveLoad":false,"hideTransparent":false,"interType":"disabled","lerp":0,"easeType":"default","continuePlaying":false,"scrollActions":false,"scrollLerp":0.1000000000000000055511151231257827021181583404541015625,"editorEnabled":true,"meta":{"w":1000,"h":1000,"layers":{"layer1":{"refId":[],"fields":[],"layerName":"Rotation","assetName":false},"layer2":{"refId":[],"fields":[{"type":"st","name":"Stroke 1","hasEffect":false,"level":3,"lKey":"layer2","val":[0.047058823529411764052809985514613799750804901123046875,0.0235294117647058820264049927573068998754024505615234375,0.0235294117647058820264049927573068998754024505615234375,1],"timeBased":false,"stroke":50,"layer":"Shape Layer 4","path":"layers.1.shapes.0.it.1"}],"layerName":"Shape Layer 4","assetName":false},"layer3":{"refId":[],"fields":[{"type":"st","name":"Stroke 1","hasEffect":false,"level":3,"lKey":"layer3","val":[0.047058823529411764052809985514613799750804901123046875,0.0235294117647058820264049927573068998754024505615234375,0.0235294117647058820264049927573068998754024505615234375,1],"timeBased":false,"stroke":50,"layer":"Shape Layer 2","path":"layers.2.shapes.0.it.1"}],"layerName":"Shape Layer 2","assetName":false},"layer4":{"refId":[],"fields":[{"type":"st","name":"Stroke 1","hasEffect":false,"level":3,"lKey":"layer4","val":[0.047058823529411764052809985514613799750804901123046875,0.0235294117647058820264049927573068998754024505615234375,0.0235294117647058820264049927573068998754024505615234375,1],"timeBased":false,"stroke":50,"layer":"Shape Layer 1","path":"layers.3.shapes.0.it.1"}],"layerName":"Shape Layer 1","assetName":false}},"ef":false,"refs":[],"changedGroup":{"colors":{"#558b6e":"#0c0606"},"strokes":{"74":50}},"url":"https:\/\/bibabs.fr\/wp-content\/uploads\/revslider\/lottie\/objects\/lottiecustoms\/95113-arrow-down.json"}}' 
+								style="z-index:27;"
+							> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-1-slide-1-layer-28" 
+								class="tp-shape tp-shapewrapper tp-lottie"
+								data-type="shape"
+								data-rsp_ch="on"
+								data-xy="xo:640px,640px,640px,279px;yo:101px,101px,101px,40px;"
+								data-text="w:normal;s:20,20,20,7;l:0,0,0,9;"
+								data-dim="w:103,103,103,101;h:62,62,62,172;"
+								data-btrans="rZ:-90;"
+								data-frame_1="st:2100;"
+								data-frame_999="o:0;st:w;sR:11700;"
+								data-lottie='{"jsonUrl":"https:\/\/bibabs.fr\/wp-content\/uploads\/revslider\/lottie\/objects\/lottiecustoms\/94116-arrow.json","duration":2169,"autoplay":true,"respectTlStart":true,"endlessLoop":false,"reverse":false,"repeat":-1,"type":"svg","size":"contain","progressiveLoad":false,"hideTransparent":false,"interType":"disabled","lerp":0,"easeType":"default","continuePlaying":false,"scrollActions":false,"scrollLerp":0.1000000000000000055511151231257827021181583404541015625,"editorEnabled":true,"meta":{"w":1736,"h":1137,"layers":{"layer1":{"refId":[],"fields":[{"type":"st","name":"Stroke 1","hasEffect":false,"level":3,"lKey":"layer1","val":[0,0,0,1],"timeBased":false,"stroke":46,"layer":"Shape Layer 2","path":"layers.0.shapes.0.it.2"}],"layerName":"Shape Layer 2","assetName":false},"layer2":{"refId":[],"fields":[{"type":"st","name":"Stroke 1","hasEffect":false,"level":3,"lKey":"layer2","val":[0,0,0,1],"timeBased":false,"stroke":46,"layer":"Shape Layer 1","path":"layers.1.shapes.0.it.2"}],"layerName":"Shape Layer 1","assetName":false}},"ef":false,"refs":[],"url":"https:\/\/bibabs.fr\/wp-content\/uploads\/revslider\/lottie\/objects\/lottiecustoms\/94116-arrow.json","changedGroup":{"colors":{"#a6626b":"#000000"},"strokes":[]}}}' 
+								style="z-index:30;"
+							> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-1-slide-1-layer-29" 
+								class="tp-shape tp-shapewrapper tp-lottie"
+								data-type="shape"
+								data-rsp_ch="on"
+								data-xy="xo:460px,460px,460px,99px;yo:101px,101px,101px,40px;"
+								data-text="w:normal;s:20,20,20,7;l:0,0,0,9;"
+								data-dim="w:103,103,103,101;h:62,62,62,172;"
+								data-btrans="rX:180;rZ:-90;"
+								data-frame_0="x:0,0,0,0px;y:0,0,0,0px;"
+								data-frame_1="x:0,0,0,0px;y:0,0,0,0px;st:500;"
+								data-frame_999="o:0;st:w;sR:11700;"
+								data-lottie='{"jsonUrl":"https:\/\/bibabs.fr\/wp-content\/uploads\/revslider\/lottie\/objects\/lottiecustoms\/94116-arrow.json","duration":2169,"autoplay":true,"respectTlStart":true,"endlessLoop":false,"reverse":false,"repeat":-1,"type":"svg","size":"contain","progressiveLoad":false,"hideTransparent":false,"interType":"disabled","lerp":0,"easeType":"default","continuePlaying":false,"scrollActions":false,"scrollLerp":0.1000000000000000055511151231257827021181583404541015625,"editorEnabled":true,"meta":{"w":1736,"h":1137,"layers":{"layer1":{"refId":[],"fields":[{"type":"st","name":"Stroke 1","hasEffect":false,"level":3,"lKey":"layer1","val":[0,0,0,1],"timeBased":false,"stroke":46,"layer":"Shape Layer 2","path":"layers.0.shapes.0.it.2"}],"layerName":"Shape Layer 2","assetName":false},"layer2":{"refId":[],"fields":[{"type":"st","name":"Stroke 1","hasEffect":false,"level":3,"lKey":"layer2","val":[0,0,0,1],"timeBased":false,"stroke":46,"layer":"Shape Layer 1","path":"layers.1.shapes.0.it.2"}],"layerName":"Shape Layer 1","assetName":false}},"ef":false,"refs":[],"url":"https:\/\/bibabs.fr\/wp-content\/uploads\/revslider\/lottie\/objects\/lottiecustoms\/94116-arrow.json","changedGroup":{"colors":{"#a6626b":"#000000"},"strokes":[]}}}' 
+								style="z-index:29;"
+							> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-1-slide-1-layer-30" 
+								class="tp-shape tp-shapewrapper tp-lottie"
+								data-type="shape"
+								data-rsp_ch="on"
+								data-xy="xo:440px,440px,440px,80px;yo:401px,401px,401px,400px;"
+								data-text="w:normal;s:20,20,20,7;l:0,0,0,9;"
+								data-dim="w:142,142,142,126;h:85,85,85,75;"
+								data-btrans="rY:180;rZ:-10;"
+								data-frame_0="x:0,0,0,0px;y:0,0,0,0px;o:1;"
+								data-frame_1="x:0,0,0,0px;y:0,0,0,0px;st:3700;"
+								data-frame_999="o:0;st:w;sR:11700;"
+								data-lottie='{"jsonUrl":"https:\/\/bibabs.fr\/wp-content\/uploads\/revslider\/lottie\/objects\/lottiecustoms\/94116-arrow.json","duration":2169,"autoplay":true,"respectTlStart":true,"endlessLoop":false,"reverse":false,"repeat":-1,"type":"svg","size":"contain","progressiveLoad":false,"hideTransparent":false,"interType":"disabled","lerp":0,"easeType":"default","continuePlaying":false,"scrollActions":false,"scrollLerp":0.1000000000000000055511151231257827021181583404541015625,"editorEnabled":true,"meta":{"w":1736,"h":1137,"layers":{"layer1":{"refId":[],"fields":[{"type":"st","name":"Stroke 1","hasEffect":false,"level":3,"lKey":"layer1","val":[0,0,0,1],"timeBased":false,"stroke":46,"layer":"Shape Layer 2","path":"layers.0.shapes.0.it.2"}],"layerName":"Shape Layer 2","assetName":false},"layer2":{"refId":[],"fields":[{"type":"st","name":"Stroke 1","hasEffect":false,"level":3,"lKey":"layer2","val":[0,0,0,1],"timeBased":false,"stroke":46,"layer":"Shape Layer 1","path":"layers.1.shapes.0.it.2"}],"layerName":"Shape Layer 1","assetName":false}},"ef":false,"refs":[],"url":"https:\/\/bibabs.fr\/wp-content\/uploads\/revslider\/lottie\/objects\/lottiecustoms\/94116-arrow.json","changedGroup":{"colors":{"#a6626b":"#000000"},"strokes":[]}}}' 
+								style="z-index:26;"
+							> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-1-slide-1-layer-32" 
+								class="tp-shape tp-shapewrapper tp-lottie"
+								data-type="shape"
+								data-rsp_ch="on"
+								data-xy="xo:640px,640px,640px,280px;yo:401px,401px,401px,400px;"
+								data-text="w:normal;s:20,20,20,7;l:0,0,0,9;"
+								data-dim="w:142,142,142,126;h:85,85,85,75;"
+								data-btrans="rZ:20;"
+								data-frame_0="x:0,0,0,0px;y:0,0,0,0px;"
+								data-frame_1="x:0,0,0,0px;y:0,0,0,0px;st:3700;"
+								data-frame_999="o:0;st:w;sR:11700;"
+								data-lottie='{"jsonUrl":"https:\/\/bibabs.fr\/wp-content\/uploads\/revslider\/lottie\/objects\/lottiecustoms\/94116-arrow.json","duration":2169,"autoplay":true,"respectTlStart":true,"endlessLoop":false,"reverse":false,"repeat":-1,"type":"svg","size":"contain","progressiveLoad":false,"hideTransparent":false,"interType":"disabled","lerp":0,"easeType":"default","continuePlaying":false,"scrollActions":false,"scrollLerp":0.1000000000000000055511151231257827021181583404541015625,"editorEnabled":true,"meta":{"w":1736,"h":1137,"layers":{"layer1":{"refId":[],"fields":[{"type":"st","name":"Stroke 1","hasEffect":false,"level":3,"lKey":"layer1","val":[0,0,0,1],"timeBased":false,"stroke":46,"layer":"Shape Layer 2","path":"layers.0.shapes.0.it.2"}],"layerName":"Shape Layer 2","assetName":false},"layer2":{"refId":[],"fields":[{"type":"st","name":"Stroke 1","hasEffect":false,"level":3,"lKey":"layer2","val":[0,0,0,1],"timeBased":false,"stroke":46,"layer":"Shape Layer 1","path":"layers.1.shapes.0.it.2"}],"layerName":"Shape Layer 1","assetName":false}},"ef":false,"refs":[],"url":"https:\/\/bibabs.fr\/wp-content\/uploads\/revslider\/lottie\/objects\/lottiecustoms\/94116-arrow.json","changedGroup":{"colors":{"#a6626b":"#000000"},"strokes":[]}}}' 
+								style="z-index:25;"
+							> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-1-slide-1-layer-33" 
+								class="tp-shape tp-shapewrapper tp-lottie"
+								data-type="shape"
+								data-rsp_ch="on"
+								data-xy="xo:530px,530px,530px,180px;yo:491px,491px,491px,500px;"
+								data-text="w:normal;s:20,20,20,7;l:0,0,0,9;"
+								data-dim="w:142,142,142,122px;h:85,85,85,73px;"
+								data-frame_1="st:4500;"
+								data-frame_999="o:0;st:w;sR:11700;"
+								data-lottie='{"jsonUrl":"https:\/\/bibabs.fr\/wp-content\/uploads\/revslider\/lottie\/objects\/lottiecustoms\/95113-arrow-down.json","duration":2000,"autoplay":true,"respectTlStart":true,"endlessLoop":false,"reverse":false,"repeat":-1,"type":"svg","size":"contain","progressiveLoad":false,"hideTransparent":false,"interType":"disabled","lerp":0,"easeType":"default","continuePlaying":false,"scrollActions":false,"scrollLerp":0.1000000000000000055511151231257827021181583404541015625,"editorEnabled":true,"meta":{"w":1000,"h":1000,"layers":{"layer1":{"refId":[],"fields":[],"layerName":"Rotation","assetName":false},"layer2":{"refId":[],"fields":[{"type":"st","name":"Stroke 1","hasEffect":false,"level":3,"lKey":"layer2","val":[0.047058823529411764052809985514613799750804901123046875,0.0235294117647058820264049927573068998754024505615234375,0.0235294117647058820264049927573068998754024505615234375,1],"timeBased":false,"stroke":50,"layer":"Shape Layer 4","path":"layers.1.shapes.0.it.1"}],"layerName":"Shape Layer 4","assetName":false},"layer3":{"refId":[],"fields":[{"type":"st","name":"Stroke 1","hasEffect":false,"level":3,"lKey":"layer3","val":[0.047058823529411764052809985514613799750804901123046875,0.0235294117647058820264049927573068998754024505615234375,0.0235294117647058820264049927573068998754024505615234375,1],"timeBased":false,"stroke":50,"layer":"Shape Layer 2","path":"layers.2.shapes.0.it.1"}],"layerName":"Shape Layer 2","assetName":false},"layer4":{"refId":[],"fields":[{"type":"st","name":"Stroke 1","hasEffect":false,"level":3,"lKey":"layer4","val":[0.047058823529411764052809985514613799750804901123046875,0.0235294117647058820264049927573068998754024505615234375,0.0235294117647058820264049927573068998754024505615234375,1],"timeBased":false,"stroke":50,"layer":"Shape Layer 1","path":"layers.3.shapes.0.it.1"}],"layerName":"Shape Layer 1","assetName":false}},"ef":false,"refs":[],"changedGroup":{"colors":{"#558b6e":"#0c0606"},"strokes":{"74":50}},"url":"https:\/\/bibabs.fr\/wp-content\/uploads\/revslider\/lottie\/objects\/lottiecustoms\/95113-arrow-down.json","RSedited":true}}' 
+								style="z-index:24;"
+							> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-1-slide-1-layer-35" 
+								class="tp-shape tp-shapewrapper tp-lottie"
+								data-type="shape"
+								data-rsp_ch="on"
+								data-xy="xo:600px,600px,600px,240px;yo:619px,619px,619px,620px;"
+								data-text="w:normal;s:20,20,20,7;l:0,0,0,9;"
+								data-dim="w:171,171,171,151px;h:103,103,103,91px;"
+								data-btrans="rZ:-45;"
+								data-frame_1="st:5200;"
+								data-frame_999="o:0;st:w;sR:11700;"
+								data-lottie='{"jsonUrl":"https:\/\/bibabs.fr\/wp-content\/uploads\/revslider\/lottie\/objects\/lottiecustoms\/64932-arrow-slide-down (1).json","duration":1034,"autoplay":true,"respectTlStart":true,"endlessLoop":false,"reverse":false,"repeat":-1,"type":"svg","size":"contain","progressiveLoad":false,"hideTransparent":false,"interType":"disabled","lerp":0,"easeType":"default","continuePlaying":false,"scrollActions":false,"scrollLerp":0.1000000000000000055511151231257827021181583404541015625,"editorEnabled":true,"meta":false}' 
+								style="z-index:23;"
+							> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-1-slide-1-layer-36" 
+								class="tp-shape tp-shapewrapper tp-lottie"
+								data-type="shape"
+								data-rsp_ch="on"
+								data-xy="xo:433px,433px,433px,80px;yo:611px,611px,611px,620px;"
+								data-text="w:normal;s:20,20,20,7;l:0,0,0,9;"
+								data-dim="w:171,171,171,151px;h:103,103,103,91px;"
+								data-btrans="rZ:45;"
+								data-frame_1="st:5200;"
+								data-frame_999="o:0;st:w;sR:11700;"
+								data-lottie='{"jsonUrl":"https:\/\/bibabs.fr\/wp-content\/uploads\/revslider\/lottie\/objects\/lottiecustoms\/64932-arrow-slide-down (1).json","duration":1034,"autoplay":true,"respectTlStart":true,"endlessLoop":false,"reverse":false,"repeat":-1,"type":"svg","size":"contain","progressiveLoad":false,"hideTransparent":false,"interType":"disabled","lerp":0,"easeType":"default","continuePlaying":false,"scrollActions":false,"scrollLerp":0.1000000000000000055511151231257827021181583404541015625,"editorEnabled":true,"meta":false}' 
+								style="z-index:22;"
+							> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-1-slide-1-layer-37" 
+								class="tp-shape tp-shapewrapper tp-lottie"
+								data-type="shape"
+								data-rsp_ch="on"
+								data-xy="xo:620px,620px,620px,260px;yo:701px,701px,701px,700px;"
+								data-text="w:normal;s:20,20,20,7;l:0,0,0,9;"
+								data-dim="w:136,136,136,122px;h:81,81,81,73px;"
+								data-btrans="rZ:90;"
+								data-frame_1="st:6000;"
+								data-frame_999="o:0;st:w;sR:11700;"
+								data-lottie='{"jsonUrl":"https:\/\/bibabs.fr\/wp-content\/uploads\/revslider\/lottie\/objects\/lottiecustoms\/95113-arrow-down.json","duration":2000,"autoplay":true,"respectTlStart":true,"endlessLoop":false,"reverse":false,"repeat":-1,"type":"svg","size":"contain","progressiveLoad":false,"hideTransparent":false,"interType":"disabled","lerp":0,"easeType":"default","continuePlaying":false,"scrollActions":false,"scrollLerp":0.1000000000000000055511151231257827021181583404541015625,"editorEnabled":true,"meta":{"w":1000,"h":1000,"layers":{"layer1":{"refId":[],"fields":[],"layerName":"Rotation","assetName":false},"layer2":{"refId":[],"fields":[{"type":"st","name":"Stroke 1","hasEffect":false,"level":3,"lKey":"layer2","val":[0.047058823529411764052809985514613799750804901123046875,0.0235294117647058820264049927573068998754024505615234375,0.0235294117647058820264049927573068998754024505615234375,1],"timeBased":false,"stroke":50,"layer":"Shape Layer 4","path":"layers.1.shapes.0.it.1"}],"layerName":"Shape Layer 4","assetName":false},"layer3":{"refId":[],"fields":[{"type":"st","name":"Stroke 1","hasEffect":false,"level":3,"lKey":"layer3","val":[0.047058823529411764052809985514613799750804901123046875,0.0235294117647058820264049927573068998754024505615234375,0.0235294117647058820264049927573068998754024505615234375,1],"timeBased":false,"stroke":50,"layer":"Shape Layer 2","path":"layers.2.shapes.0.it.1"}],"layerName":"Shape Layer 2","assetName":false},"layer4":{"refId":[],"fields":[{"type":"st","name":"Stroke 1","hasEffect":false,"level":3,"lKey":"layer4","val":[0.047058823529411764052809985514613799750804901123046875,0.0235294117647058820264049927573068998754024505615234375,0.0235294117647058820264049927573068998754024505615234375,1],"timeBased":false,"stroke":50,"layer":"Shape Layer 1","path":"layers.3.shapes.0.it.1"}],"layerName":"Shape Layer 1","assetName":false}},"ef":false,"refs":[],"changedGroup":{"colors":{"#558b6e":"#0c0606"},"strokes":{"74":50}},"url":"https:\/\/bibabs.fr\/wp-content\/uploads\/revslider\/lottie\/objects\/lottiecustoms\/95113-arrow-down.json","RSedited":true}}' 
+								style="z-index:21;"
+							> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-1-slide-1-layer-38" 
+								class="tp-shape tp-shapewrapper tp-lottie"
+								data-type="shape"
+								data-rsp_ch="on"
+								data-xy="xo:450px,450px,450px,100px;yo:701px,701px,701px,700px;"
+								data-text="w:normal;s:20,20,20,7;l:0,0,0,9;"
+								data-dim="w:136,136,136,122px;h:81,81,81,73px;"
+								data-btrans="rZ:-90;"
+								data-frame_0="x:0,0,0,0px;y:0,0,0,0px;"
+								data-frame_1="x:0,0,0,0px;y:0,0,0,0px;st:6000;"
+								data-frame_999="o:0;st:w;sR:11700;"
+								data-lottie='{"jsonUrl":"https:\/\/bibabs.fr\/wp-content\/uploads\/revslider\/lottie\/objects\/lottiecustoms\/95113-arrow-down.json","duration":2000,"autoplay":true,"respectTlStart":true,"endlessLoop":false,"reverse":false,"repeat":-1,"type":"svg","size":"contain","progressiveLoad":false,"hideTransparent":false,"interType":"disabled","lerp":0,"easeType":"default","continuePlaying":false,"scrollActions":false,"scrollLerp":0.1000000000000000055511151231257827021181583404541015625,"editorEnabled":true,"meta":{"w":1000,"h":1000,"layers":{"layer1":{"refId":[],"fields":[],"layerName":"Rotation","assetName":false},"layer2":{"refId":[],"fields":[{"type":"st","name":"Stroke 1","hasEffect":false,"level":3,"lKey":"layer2","val":[0.047058823529411764052809985514613799750804901123046875,0.0235294117647058820264049927573068998754024505615234375,0.0235294117647058820264049927573068998754024505615234375,1],"timeBased":false,"stroke":50,"layer":"Shape Layer 4","path":"layers.1.shapes.0.it.1"}],"layerName":"Shape Layer 4","assetName":false},"layer3":{"refId":[],"fields":[{"type":"st","name":"Stroke 1","hasEffect":false,"level":3,"lKey":"layer3","val":[0.047058823529411764052809985514613799750804901123046875,0.0235294117647058820264049927573068998754024505615234375,0.0235294117647058820264049927573068998754024505615234375,1],"timeBased":false,"stroke":50,"layer":"Shape Layer 2","path":"layers.2.shapes.0.it.1"}],"layerName":"Shape Layer 2","assetName":false},"layer4":{"refId":[],"fields":[{"type":"st","name":"Stroke 1","hasEffect":false,"level":3,"lKey":"layer4","val":[0.047058823529411764052809985514613799750804901123046875,0.0235294117647058820264049927573068998754024505615234375,0.0235294117647058820264049927573068998754024505615234375,1],"timeBased":false,"stroke":50,"layer":"Shape Layer 1","path":"layers.3.shapes.0.it.1"}],"layerName":"Shape Layer 1","assetName":false}},"ef":false,"refs":[],"changedGroup":{"colors":{"#558b6e":"#0c0606"},"strokes":{"74":50}},"url":"https:\/\/bibabs.fr\/wp-content\/uploads\/revslider\/lottie\/objects\/lottiecustoms\/95113-arrow-down.json","RSedited":true}}' 
+								style="z-index:20;"
+							> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-1-slide-1-layer-39" 
+								class="tp-shape tp-shapewrapper tp-lottie"
+								data-type="shape"
+								data-rsp_ch="on"
+								data-xy="xo:530px,530px,530px,185px;yo:781px,781px,781px,768px;"
+								data-text="w:normal;s:20,20,20,7;l:0,0,0,9;"
+								data-dim="w:141,141,141,110px;h:85,85,85,66px;"
+								data-frame_1="st:6800;"
+								data-frame_999="o:0;st:w;sR:11700;"
+								data-lottie='{"jsonUrl":"https:\/\/bibabs.fr\/wp-content\/uploads\/revslider\/lottie\/objects\/lottiecustoms\/95113-arrow-down.json","duration":2000,"autoplay":true,"respectTlStart":true,"endlessLoop":false,"reverse":false,"repeat":-1,"type":"svg","size":"contain","progressiveLoad":false,"hideTransparent":false,"interType":"disabled","lerp":0,"easeType":"default","continuePlaying":false,"scrollActions":false,"scrollLerp":0.1000000000000000055511151231257827021181583404541015625,"editorEnabled":true,"meta":{"w":1000,"h":1000,"layers":{"layer1":{"refId":[],"fields":[],"layerName":"Rotation","assetName":false},"layer2":{"refId":[],"fields":[{"type":"st","name":"Stroke 1","hasEffect":false,"level":3,"lKey":"layer2","val":[0.047058823529411764052809985514613799750804901123046875,0.0235294117647058820264049927573068998754024505615234375,0.0235294117647058820264049927573068998754024505615234375,1],"timeBased":false,"stroke":50,"layer":"Shape Layer 4","path":"layers.1.shapes.0.it.1"}],"layerName":"Shape Layer 4","assetName":false},"layer3":{"refId":[],"fields":[{"type":"st","name":"Stroke 1","hasEffect":false,"level":3,"lKey":"layer3","val":[0.047058823529411764052809985514613799750804901123046875,0.0235294117647058820264049927573068998754024505615234375,0.0235294117647058820264049927573068998754024505615234375,1],"timeBased":false,"stroke":50,"layer":"Shape Layer 2","path":"layers.2.shapes.0.it.1"}],"layerName":"Shape Layer 2","assetName":false},"layer4":{"refId":[],"fields":[{"type":"st","name":"Stroke 1","hasEffect":false,"level":3,"lKey":"layer4","val":[0.047058823529411764052809985514613799750804901123046875,0.0235294117647058820264049927573068998754024505615234375,0.0235294117647058820264049927573068998754024505615234375,1],"timeBased":false,"stroke":50,"layer":"Shape Layer 1","path":"layers.3.shapes.0.it.1"}],"layerName":"Shape Layer 1","assetName":false}},"ef":false,"refs":[],"changedGroup":{"colors":{"#558b6e":"#0c0606"},"strokes":{"74":50}},"url":"https:\/\/bibabs.fr\/wp-content\/uploads\/revslider\/lottie\/objects\/lottiecustoms\/95113-arrow-down.json","RSedited":true}}' 
+								style="z-index:19;"
+							> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-1-slide-1-layer-40" 
+								data-type="text"
+								data-color="#000000"
+								data-rsp_ch="on"
+								data-xy="xo:600px,600px,600px,240px;yo:148px,148px,148px,153px;"
+								data-text="w:normal;s:30,30,30,20;l:30,30,30,20;"
+								data-frame_0="o:1;"
+								data-frame_0_chars="d:5;x:-105%;o:0;rZ:-90deg;"
+								data-frame_0_mask="u:t;"
+								data-frame_1_chars="e:power4.inOut;dir:backward;d:10;rZ:0deg;"
+								data-frame_1_mask="u:t;"
+								data-frame_999="o:0;st:11900;sR:11500;"
+								style="z-index:41;font-family:'Roboto';"
+							>1 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-1-slide-1-layer-41" 
+								data-type="text"
+								data-color="#000000"
+								data-rsp_ch="on"
+								data-xy="xo:500px,500px,500px,140px;yo:181px,181px,181px,180px;"
+								data-text="w:normal;s:30,30,30,20;l:30,30,30,20;"
+								data-frame_0="o:1;"
+								data-frame_0_chars="d:5;x:-105%;o:0;rZ:-90deg;"
+								data-frame_0_mask="u:t;"
+								data-frame_1="st:800;"
+								data-frame_1_chars="e:power4.inOut;dir:backward;d:10;rZ:0deg;"
+								data-frame_1_mask="u:t;"
+								data-frame_999="o:0;st:11900;sR:11400;"
+								style="z-index:40;font-family:'Roboto';"
+							>2 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-1-slide-1-layer-42" 
+								data-type="text"
+								data-color="#000000"
+								data-rsp_ch="on"
+								data-xy="xo:500px,500px,500px,140px;yo:332px,332px,332px,340px;"
+								data-text="w:normal;s:30,30,30,20;l:30,30,30,20;"
+								data-frame_0="o:1;"
+								data-frame_0_chars="d:5;x:-105%;o:0;rZ:-90deg;"
+								data-frame_0_mask="u:t;"
+								data-frame_1="st:1600;"
+								data-frame_1_chars="e:power4.inOut;dir:backward;d:10;rZ:0deg;"
+								data-frame_1_mask="u:t;"
+								data-frame_999="o:0;st:11900;sR:11400;"
+								style="z-index:39;font-family:'Roboto';"
+							>3 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-1-slide-1-layer-43" 
+								data-type="text"
+								data-color="#000000"
+								data-rsp_ch="on"
+								data-xy="xo:690px,690px,690px,320px;yo:179px,179px,179px,180px;"
+								data-text="w:normal;s:30,30,30,20;l:30,30,30,20;"
+								data-frame_0="o:1;"
+								data-frame_0_chars="d:5;x:-105%;o:0;rZ:-90deg;"
+								data-frame_0_mask="u:t;"
+								data-frame_1="st:2400;"
+								data-frame_1_chars="e:power4.inOut;dir:backward;d:10;rZ:0deg;"
+								data-frame_1_mask="u:t;"
+								data-frame_999="o:0;st:11900;sR:11400;"
+								style="z-index:38;font-family:'Roboto';"
+							>4 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-1-slide-1-layer-44" 
+								data-type="text"
+								data-color="#000000"
+								data-rsp_ch="on"
+								data-xy="xo:690px,690px,690px,320px;yo:332px,332px,332px,340px;"
+								data-text="w:normal;s:30,30,30,20;l:30,30,30,20;"
+								data-frame_0="o:1;"
+								data-frame_0_chars="d:5;x:-105%;o:0;rZ:-90deg;"
+								data-frame_0_mask="u:t;"
+								data-frame_1="x:-1px,-1px,-1px,0px;st:3200;"
+								data-frame_1_chars="e:power4.inOut;dir:backward;d:10;rZ:0deg;"
+								data-frame_1_mask="u:t;"
+								data-frame_999="o:0;st:11900;sR:11400;"
+								style="z-index:37;font-family:'Roboto';"
+							>5 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-1-slide-1-layer-45" 
+								data-type="text"
+								data-color="#000000"
+								data-rsp_ch="on"
+								data-xy="xo:600px,600px,600px,229px;yo:371px,371px,371px,370px;"
+								data-text="w:normal;s:30,30,30,20;l:30,30,30,20;"
+								data-dim="w:30.850700000000003px,30.850700000000003px,30.850700000000003px,auto;"
+								data-frame_0="o:1;"
+								data-frame_0_chars="d:5;x:-105%;o:0;rZ:-90deg;"
+								data-frame_0_mask="u:t;"
+								data-frame_1="st:4000;"
+								data-frame_1_chars="e:power4.inOut;dir:backward;d:10;rZ:0deg;"
+								data-frame_1_mask="u:t;"
+								data-frame_999="o:0;st:11900;sR:11400;"
+								style="z-index:36;font-family:'Roboto';"
+							>6 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-1-slide-1-layer-46" 
+								data-type="text"
+								data-color="#000000"
+								data-rsp_ch="on"
+								data-xy="xo:530px,530px,530px,170px;yo:601px,601px,601px,600px;"
+								data-text="w:normal;s:30,30,30,20;l:30,30,30,20;"
+								data-frame_0="o:1;"
+								data-frame_0_chars="d:5;x:-105%;o:0;rZ:-90deg;"
+								data-frame_0_mask="u:t;"
+								data-frame_1="st:4800;"
+								data-frame_1_chars="e:power4.inOut;dir:backward;d:10;rZ:0deg;"
+								data-frame_1_mask="u:t;"
+								data-frame_999="o:0;st:11900;sR:11400;"
+								style="z-index:35;font-family:'Roboto';"
+							>7 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-1-slide-1-layer-47" 
+								data-type="text"
+								data-color="#000000"
+								data-rsp_ch="on"
+								data-xy="xo:372px,372px,372px,60px;yo:721px,721px,721px,785px;"
+								data-text="w:normal;s:30,30,30,20;l:30,30,30,20;"
+								data-frame_0="o:1;"
+								data-frame_0_chars="d:5;x:-105%;o:0;rZ:-90deg;"
+								data-frame_0_mask="u:t;"
+								data-frame_1="st:5500;"
+								data-frame_1_chars="e:power4.inOut;dir:backward;d:10;rZ:0deg;"
+								data-frame_1_mask="u:t;"
+								data-frame_999="o:0;st:11900;sR:11400;"
+								style="z-index:34;font-family:'Roboto';"
+							>8 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-1-slide-1-layer-48" 
+								data-type="text"
+								data-color="#000000"
+								data-rsp_ch="on"
+								data-xy="xo:540px,540px,540px,185px;yo:781px,781px,781px,774px;"
+								data-text="w:normal;s:30,30,30,20;l:30,30,30,20;"
+								data-frame_0="o:1;"
+								data-frame_0_chars="d:5;x:-105%;o:0;rZ:-90deg;"
+								data-frame_0_mask="u:t;"
+								data-frame_1="st:6300;"
+								data-frame_1_chars="e:power4.inOut;dir:backward;d:10;rZ:0deg;"
+								data-frame_1_mask="u:t;"
+								data-frame_999="o:0;st:11900;sR:11400;"
+								style="z-index:32;font-family:'Roboto';"
+							>10 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-1-slide-1-layer-49" 
+								data-type="text"
+								data-color="#000000"
+								data-rsp_ch="on"
+								data-xy="xo:820px,820px,820px,390px;yo:711px,711px,711px,791px;"
+								data-text="w:normal;s:30,30,30,20;l:30,30,30,20;"
+								data-frame_0="o:1;"
+								data-frame_0_chars="d:5;x:-105%;o:0;rZ:-90deg;"
+								data-frame_0_mask="u:t;"
+								data-frame_1="st:5500;"
+								data-frame_1_chars="e:power4.inOut;dir:backward;d:10;rZ:0deg;"
+								data-frame_1_mask="u:t;"
+								data-frame_999="o:0;st:11900;sR:11400;"
+								style="z-index:33;font-family:'Roboto';"
+							>9<br />
+ 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-1-slide-1-layer-50" 
+								data-type="text"
+								data-color="#000000"
+								data-rsp_ch="on"
+								data-xy="xo:517px,517px,517px,162px;yo:901px,901px,901px,870px;"
+								data-text="w:normal;s:30,30,30,20;l:30,30,30,20;"
+								data-frame_0="o:1;"
+								data-frame_0_chars="d:5;x:-105%;o:0;rZ:-90deg;"
+								data-frame_0_mask="u:t;"
+								data-frame_1="st:7100;"
+								data-frame_1_chars="e:power4.inOut;dir:backward;d:10;rZ:0deg;"
+								data-frame_1_mask="u:t;"
+								data-frame_999="o:0;st:11900;sR:11400;"
+								style="z-index:31;font-family:'Roboto';"
+							>11 
+							</rs-layer><!--
+-->						</rs-slide>
+						<rs-slide style="position: absolute;" data-key="rs-11" data-title="treeShow" data-anim="ms:500ms;" data-in="o:0;" data-out="a:false;" data-sloop="s:20;e:10670;">
+							<img src="assets/transparent.png" alt="" class="rev-slidebg tp-rs-img" data-bg="c:rgba(255,255,255,0);" data-parallax="off" data-no-retina>
+<!--
+							--><rs-layer
+								id="slider-1-slide-11-layer-1" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:c;xo:-20px,-20px,-20px,0;yo:41px,41px,41px,46px;"
+								data-text="w:normal;s:20,20,20,7;l:0,0,0,9;"
+								data-dim="w:['102px','102px','102px','102px'];h:['102px','102px','102px','102px'];"
+								data-border="bos:solid;boc:#5ac8fa;bow:3px,3px,3px,3px;bor:50%,50%,50%,50%;"
+								data-frame_0="rY:360deg;"
+								data-frame_1="e:back.out;sp:500;sR:500;"
+								data-frame_999="o:0;st:w;sR:11000;"
+								data-tloop="u:true;"
+								style="z-index:18;box-shadow:rgba(0, 0, 0, 0.35) 0px 5px 15px;"
+							><img src="assets/dummy.png" alt="" class="tp-rs-img rs-lazyload" width="800" height="800" data-lazyload="assets/1B-e1649853592396.jpg" data-no-retina> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-1-slide-11-layer-6" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:c;xo:-180px,-180px,-180px,-160px;yo:141px,141px,141px,140px;"
+								data-text="w:normal;s:20,20,20,7;l:0,0,0,9;"
+								data-dim="w:['102px','102px','102px','102px'];h:['102px','102px','102px','102px'];"
+								data-border="bos:solid;boc:#5ac8fa;bow:3px,3px,3px,3px;bor:50%,50%,50%,50%;"
+								data-frame_0="rY:360deg;"
+								data-frame_1="e:back.out;st:800;sp:500;sR:1300;"
+								data-frame_999="o:0;st:w;sR:10200;"
+								data-tloop="u:true;"
+								style="z-index:17;box-shadow:rgba(0, 0, 0, 0.35) 0px 5px 15px;"
+							><img src="assets/dummy.png" alt="" class="tp-rs-img rs-lazyload" width="800" height="800" data-lazyload="assets/2-e1649853687129.jpg" data-no-retina> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-1-slide-11-layer-8" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:c;xo:140px,140px,140px,160px;yo:141px,141px,141px,140px;"
+								data-text="w:normal;s:20,20,20,7;l:0,0,0,9;"
+								data-dim="w:['102px','102px','102px','102px'];h:['102px','102px','102px','102px'];"
+								data-border="bos:solid;boc:#5ac8fa;bow:3px,3px,3px,3px;bor:50%,50%,50%,50%;"
+								data-frame_0="rY:360deg;"
+								data-frame_1="e:back.out;st:2400;sp:500;sR:2200;"
+								data-frame_999="o:0;st:w;sR:9300;"
+								data-tloop="u:true;"
+								style="z-index:15;box-shadow:rgba(0, 0, 0, 0.35) 0px 5px 15px;"
+							><img src="assets/dummy.png" alt="" class="tp-rs-img rs-lazyload" width="800" height="800" data-lazyload="assets/4-e1649853848131.jpg" data-no-retina> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-1-slide-11-layer-9" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:c;xo:-20px,-20px,-20px,0;yo:401px,401px,401px,400px;"
+								data-text="w:normal;s:20,20,20,7;l:0,0,0,9;"
+								data-dim="w:['102px','102px','102px','102px'];h:['102px','102px','102px','102px'];"
+								data-border="bos:solid;boc:#5ac8fa;bow:3px,3px,3px,3px;bor:50%,50%,50%,50%;"
+								data-frame_0="rY:360deg;"
+								data-frame_1="e:back.out;st:4000;sp:500;sR:4000;"
+								data-frame_999="o:0;st:w;sR:7500;"
+								data-tloop="u:true;"
+								style="z-index:13;box-shadow:rgba(0, 0, 0, 0.35) 0px 5px 15px;"
+							><img src="assets/dummy.png" alt="" class="tp-rs-img rs-lazyload" width="1613" height="1607" data-lazyload="assets/logo-bibabsArtboard-1@3x-100.jpg" data-no-retina> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-1-slide-11-layer-10" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:c;xo:140px,140px,140px,160px;yo:302px,302px,302px,300px;"
+								data-text="w:normal;s:20,20,20,7;l:0,0,0,9;"
+								data-dim="w:['102px','102px','102px','102px'];h:['102px','102px','102px','102px'];"
+								data-border="bos:solid;boc:#5ac8fa;bow:3px,3px,3px,3px;bor:50%,50%,50%,50%;"
+								data-frame_0="rY:360deg;"
+								data-frame_1="x:5px,5px,5px,1px;y:-9px,-9px,-9px,-3px;e:back.out;st:3200;sp:500;sR:3100;"
+								data-frame_999="o:0;st:w;sR:8400;"
+								data-tloop="u:true;"
+								style="z-index:14;box-shadow:rgba(0, 0, 0, 0.35) 0px 5px 15px;"
+							><img src="assets/dummy.png" alt="" class="tp-rs-img rs-lazyload" width="800" height="800" data-lazyload="assets/5-e1649853920713.jpg" data-no-retina> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-1-slide-11-layer-11" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:c;xo:-180px,-180px,-180px,-160px;yo:302px,302px,302px,300px;"
+								data-text="w:normal;s:20,20,20,7;l:0,0,0,9;"
+								data-dim="w:['102px','102px','102px','102px'];h:['102px','102px','102px','102px'];"
+								data-border="bos:solid;boc:#5ac8fa;bow:3px,3px,3px,3px;bor:50%,50%,50%,50%;"
+								data-frame_0="rY:360deg;"
+								data-frame_1="e:back.out;st:1600;sp:500;sR:1300;"
+								data-frame_999="o:0;st:w;sR:10200;"
+								data-tloop="u:true;"
+								style="z-index:16;box-shadow:rgba(0, 0, 0, 0.35) 0px 5px 15px;"
+							><img src="assets/dummy.png" alt="" class="tp-rs-img rs-lazyload" width="800" height="800" data-lazyload="assets/3-e1649853762288.jpg" data-no-retina> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-1-slide-11-layer-20" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:c;xo:-20px,-20px,-20px,0;yo:561px,561px,561px,560px;"
+								data-text="w:normal;s:20,20,20,7;l:0,0,0,9;"
+								data-dim="w:['102px','102px','102px','102px'];h:['102px','102px','102px','102px'];"
+								data-border="bos:solid;boc:#5ac8fa;bow:3px,3px,3px,3px;bor:50%,50%,50%,50%;"
+								data-frame_0="rY:360deg;"
+								data-frame_1="e:back.out;st:4800;sp:500;sR:4000;"
+								data-frame_999="o:0;st:w;sR:7500;"
+								data-tloop="u:true;"
+								style="z-index:12;box-shadow:rgba(0, 0, 0, 0.35) 0px 5px 15px;"
+							><img src="assets/dummy.png" alt="" class="tp-rs-img rs-lazyload" width="800" height="800" data-lazyload="assets/7-e1649854160840.jpg" data-no-retina> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-1-slide-11-layer-21" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:c;xo:-180px,-180px,-180px,-160px;yo:681px,681px,681px,680px;"
+								data-text="w:normal;s:20,20,20,7;l:0,0,0,9;"
+								data-dim="w:['102px','102px','102px','102px'];h:['102px','102px','102px','102px'];"
+								data-border="bos:solid;boc:#5ac8fa;bow:3px,3px,3px,3px;bor:50%,50%,50%,50%;"
+								data-frame_0="rY:360deg;"
+								data-frame_1="e:back.out;st:5500;sp:500;sR:4000;"
+								data-frame_999="o:0;st:w;sR:7500;"
+								data-tloop="u:true;"
+								style="z-index:11;box-shadow:rgba(0, 0, 0, 0.35) 0px 5px 15px;"
+							><img src="assets/dummy.png" alt="" class="tp-rs-img rs-lazyload" width="800" height="800" data-lazyload="assets/8-e1649854280549.jpg" data-no-retina> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-1-slide-11-layer-22" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:c;xo:140px,140px,140px,160px;yo:681px,681px,681px,680px;"
+								data-text="w:normal;s:20,20,20,7;l:0,0,0,9;"
+								data-dim="w:['102px','102px','102px','102px'];h:['102px','102px','102px','102px'];"
+								data-border="bos:solid;boc:#5ac8fa;bow:3px,3px,3px,3px;bor:50%,50%,50%,50%;"
+								data-frame_0="rY:360deg;"
+								data-frame_1="e:back.out;st:5500;sp:500;sR:4000;"
+								data-frame_999="o:0;st:w;sR:7500;"
+								data-tloop="u:true;"
+								style="z-index:10;box-shadow:rgba(0, 0, 0, 0.35) 0px 5px 15px;"
+							><img src="assets/dummy.png" alt="" class="tp-rs-img rs-lazyload" width="800" height="800" data-lazyload="assets/9-e1649854462685.jpg" data-no-retina> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-1-slide-11-layer-23" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:c;xo:-20px,-20px,-20px,0;yo:681px,681px,681px,680px;"
+								data-text="w:normal;s:20,20,20,7;l:0,0,0,9;"
+								data-dim="w:['102px','102px','102px','102px'];h:['102px','102px','102px','102px'];"
+								data-border="bos:solid;boc:#5ac8fa;bow:3px,3px,3px,3px;bor:50%,50%,50%,50%;"
+								data-frame_0="rY:360deg;"
+								data-frame_1="e:back.out;st:6300;sp:500;sR:4000;"
+								data-frame_999="o:0;st:w;sR:7500;"
+								data-tloop="u:true;"
+								style="z-index:9;box-shadow:rgba(0, 0, 0, 0.35) 0px 5px 15px;"
+							><img src="assets/dummy.png" alt="" class="tp-rs-img rs-lazyload" width="800" height="800" data-lazyload="assets/10-e1649854388355.jpg" data-no-retina> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-1-slide-11-layer-24" 
+								data-type="image"
+								data-rsp_ch="on"
+								data-xy="x:c;xo:-20px,-20px,-20px,0;yo:861px,861px,861px,820px;"
+								data-text="w:normal;s:20,20,20,7;l:0,0,0,9;"
+								data-dim="w:['102px','102px','102px','102px'];h:['102px','102px','102px','102px'];"
+								data-border="bos:solid;boc:#5ac8fa;bow:3px,3px,3px,3px;bor:50%,50%,50%,50%;"
+								data-frame_0="rY:360deg;"
+								data-frame_1="e:back.out;st:7100;sp:500;sR:4000;"
+								data-frame_999="o:0;st:w;sR:7500;"
+								data-tloop="u:true;"
+								style="z-index:8;box-shadow:rgba(0, 0, 0, 0.35) 0px 5px 15px;"
+							><img src="assets/dummy.png" alt="" class="tp-rs-img rs-lazyload" width="800" height="800" data-lazyload="assets/11-e1649854669799.jpg" data-no-retina> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-1-slide-11-layer-25" 
+								class="tp-shape tp-shapewrapper tp-lottie"
+								data-type="shape"
+								data-rsp_ch="on"
+								data-xy="xo:369px,369px,369px,20px;yo:228px,228px,228px,235px;"
+								data-text="w:normal;s:20,20,20,7;l:0,0,0,9;"
+								data-dim="w:142,142,142,126;h:85,85,85,75;"
+								data-frame_1="st:1300;"
+								data-frame_999="o:0;st:w;sR:11700;"
+								data-lottie='{"jsonUrl":"https:\/\/bibabs.fr\/wp-content\/uploads\/revslider\/lottie\/objects\/lottiecustoms\/95113-arrow-down.json","duration":2000,"autoplay":true,"respectTlStart":false,"endlessLoop":false,"reverse":false,"repeat":-1,"type":"svg","size":"contain","progressiveLoad":false,"hideTransparent":false,"interType":"disabled","lerp":0,"easeType":"default","continuePlaying":false,"scrollActions":false,"scrollLerp":0.1000000000000000055511151231257827021181583404541015625,"editorEnabled":true,"meta":{"w":1000,"h":1000,"layers":{"layer1":{"refId":[],"fields":[],"layerName":"Rotation","assetName":false},"layer2":{"refId":[],"fields":[{"type":"st","name":"Stroke 1","hasEffect":false,"level":3,"lKey":"layer2","val":[0.047058823529411764052809985514613799750804901123046875,0.0235294117647058820264049927573068998754024505615234375,0.0235294117647058820264049927573068998754024505615234375,1],"timeBased":false,"stroke":50,"layer":"Shape Layer 4","path":"layers.1.shapes.0.it.1"}],"layerName":"Shape Layer 4","assetName":false},"layer3":{"refId":[],"fields":[{"type":"st","name":"Stroke 1","hasEffect":false,"level":3,"lKey":"layer3","val":[0.047058823529411764052809985514613799750804901123046875,0.0235294117647058820264049927573068998754024505615234375,0.0235294117647058820264049927573068998754024505615234375,1],"timeBased":false,"stroke":50,"layer":"Shape Layer 2","path":"layers.2.shapes.0.it.1"}],"layerName":"Shape Layer 2","assetName":false},"layer4":{"refId":[],"fields":[{"type":"st","name":"Stroke 1","hasEffect":false,"level":3,"lKey":"layer4","val":[0.047058823529411764052809985514613799750804901123046875,0.0235294117647058820264049927573068998754024505615234375,0.0235294117647058820264049927573068998754024505615234375,1],"timeBased":false,"stroke":50,"layer":"Shape Layer 1","path":"layers.3.shapes.0.it.1"}],"layerName":"Shape Layer 1","assetName":false}},"ef":false,"refs":[],"changedGroup":{"colors":{"#558b6e":"#0c0606"},"strokes":{"74":50}},"url":"https:\/\/bibabs.fr\/wp-content\/uploads\/revslider\/lottie\/objects\/lottiecustoms\/95113-arrow-down.json","RSedited":true}}' 
+								style="z-index:28;"
+							> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-1-slide-11-layer-26" 
+								class="tp-shape tp-shapewrapper tp-lottie"
+								data-type="shape"
+								data-rsp_ch="on"
+								data-xy="xo:30px,30px,30px,80px;yo:61px,61px,61px,170px;"
+								data-text="w:normal;s:20,20,20,7;l:0,0,0,9;"
+								data-dim="w:142,142,142,126;h:85,85,85,75;"
+								data-frame_1="x:668px,668px,668px,256px;y:162px,162px,162px,61px;st:2900;"
+								data-frame_999="o:0;st:w;sR:11700;"
+								data-lottie='{"jsonUrl":"https:\/\/bibabs.fr\/wp-content\/uploads\/revslider\/lottie\/objects\/lottiecustoms\/95113-arrow-down.json","duration":2000,"autoplay":true,"respectTlStart":true,"endlessLoop":false,"reverse":false,"repeat":-1,"type":"svg","size":"contain","progressiveLoad":false,"hideTransparent":false,"interType":"disabled","lerp":0,"easeType":"default","continuePlaying":false,"scrollActions":false,"scrollLerp":0.1000000000000000055511151231257827021181583404541015625,"editorEnabled":true,"meta":{"w":1000,"h":1000,"layers":{"layer1":{"refId":[],"fields":[],"layerName":"Rotation","assetName":false},"layer2":{"refId":[],"fields":[{"type":"st","name":"Stroke 1","hasEffect":false,"level":3,"lKey":"layer2","val":[0.047058823529411764052809985514613799750804901123046875,0.0235294117647058820264049927573068998754024505615234375,0.0235294117647058820264049927573068998754024505615234375,1],"timeBased":false,"stroke":50,"layer":"Shape Layer 4","path":"layers.1.shapes.0.it.1"}],"layerName":"Shape Layer 4","assetName":false},"layer3":{"refId":[],"fields":[{"type":"st","name":"Stroke 1","hasEffect":false,"level":3,"lKey":"layer3","val":[0.047058823529411764052809985514613799750804901123046875,0.0235294117647058820264049927573068998754024505615234375,0.0235294117647058820264049927573068998754024505615234375,1],"timeBased":false,"stroke":50,"layer":"Shape Layer 2","path":"layers.2.shapes.0.it.1"}],"layerName":"Shape Layer 2","assetName":false},"layer4":{"refId":[],"fields":[{"type":"st","name":"Stroke 1","hasEffect":false,"level":3,"lKey":"layer4","val":[0.047058823529411764052809985514613799750804901123046875,0.0235294117647058820264049927573068998754024505615234375,0.0235294117647058820264049927573068998754024505615234375,1],"timeBased":false,"stroke":50,"layer":"Shape Layer 1","path":"layers.3.shapes.0.it.1"}],"layerName":"Shape Layer 1","assetName":false}},"ef":false,"refs":[],"changedGroup":{"colors":{"#558b6e":"#0c0606"},"strokes":{"74":50}},"url":"https:\/\/bibabs.fr\/wp-content\/uploads\/revslider\/lottie\/objects\/lottiecustoms\/95113-arrow-down.json"}}' 
+								style="z-index:27;"
+							> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-1-slide-11-layer-28" 
+								class="tp-shape tp-shapewrapper tp-lottie"
+								data-type="shape"
+								data-rsp_ch="on"
+								data-xy="xo:640px,640px,640px,279px;yo:101px,101px,101px,40px;"
+								data-text="w:normal;s:20,20,20,7;l:0,0,0,9;"
+								data-dim="w:103,103,103,101;h:62,62,62,172;"
+								data-btrans="rZ:-90;"
+								data-frame_1="st:2100;"
+								data-frame_999="o:0;st:w;sR:11700;"
+								data-lottie='{"jsonUrl":"https:\/\/bibabs.fr\/wp-content\/uploads\/revslider\/lottie\/objects\/lottiecustoms\/94116-arrow.json","duration":2169,"autoplay":true,"respectTlStart":true,"endlessLoop":false,"reverse":false,"repeat":-1,"type":"svg","size":"contain","progressiveLoad":false,"hideTransparent":false,"interType":"disabled","lerp":0,"easeType":"default","continuePlaying":false,"scrollActions":false,"scrollLerp":0.1000000000000000055511151231257827021181583404541015625,"editorEnabled":true,"meta":{"w":1736,"h":1137,"layers":{"layer1":{"refId":[],"fields":[{"type":"st","name":"Stroke 1","hasEffect":false,"level":3,"lKey":"layer1","val":[0,0,0,1],"timeBased":false,"stroke":46,"layer":"Shape Layer 2","path":"layers.0.shapes.0.it.2"}],"layerName":"Shape Layer 2","assetName":false},"layer2":{"refId":[],"fields":[{"type":"st","name":"Stroke 1","hasEffect":false,"level":3,"lKey":"layer2","val":[0,0,0,1],"timeBased":false,"stroke":46,"layer":"Shape Layer 1","path":"layers.1.shapes.0.it.2"}],"layerName":"Shape Layer 1","assetName":false}},"ef":false,"refs":[],"url":"https:\/\/bibabs.fr\/wp-content\/uploads\/revslider\/lottie\/objects\/lottiecustoms\/94116-arrow.json","changedGroup":{"colors":{"#a6626b":"#000000"},"strokes":[]}}}' 
+								style="z-index:30;"
+							> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-1-slide-11-layer-29" 
+								class="tp-shape tp-shapewrapper tp-lottie"
+								data-type="shape"
+								data-rsp_ch="on"
+								data-xy="xo:460px,460px,460px,99px;yo:101px,101px,101px,40px;"
+								data-text="w:normal;s:20,20,20,7;l:0,0,0,9;"
+								data-dim="w:103,103,103,101;h:62,62,62,172;"
+								data-btrans="rX:180;rZ:-90;"
+								data-frame_0="x:0,0,0,0px;y:0,0,0,0px;"
+								data-frame_1="x:0,0,0,0px;y:0,0,0,0px;st:500;"
+								data-frame_999="o:0;st:w;sR:11700;"
+								data-lottie='{"jsonUrl":"https:\/\/bibabs.fr\/wp-content\/uploads\/revslider\/lottie\/objects\/lottiecustoms\/94116-arrow.json","duration":2169,"autoplay":true,"respectTlStart":true,"endlessLoop":false,"reverse":false,"repeat":-1,"type":"svg","size":"contain","progressiveLoad":false,"hideTransparent":false,"interType":"disabled","lerp":0,"easeType":"default","continuePlaying":false,"scrollActions":false,"scrollLerp":0.1000000000000000055511151231257827021181583404541015625,"editorEnabled":true,"meta":{"w":1736,"h":1137,"layers":{"layer1":{"refId":[],"fields":[{"type":"st","name":"Stroke 1","hasEffect":false,"level":3,"lKey":"layer1","val":[0,0,0,1],"timeBased":false,"stroke":46,"layer":"Shape Layer 2","path":"layers.0.shapes.0.it.2"}],"layerName":"Shape Layer 2","assetName":false},"layer2":{"refId":[],"fields":[{"type":"st","name":"Stroke 1","hasEffect":false,"level":3,"lKey":"layer2","val":[0,0,0,1],"timeBased":false,"stroke":46,"layer":"Shape Layer 1","path":"layers.1.shapes.0.it.2"}],"layerName":"Shape Layer 1","assetName":false}},"ef":false,"refs":[],"url":"https:\/\/bibabs.fr\/wp-content\/uploads\/revslider\/lottie\/objects\/lottiecustoms\/94116-arrow.json","changedGroup":{"colors":{"#a6626b":"#000000"},"strokes":[]}}}' 
+								style="z-index:29;"
+							> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-1-slide-11-layer-30" 
+								class="tp-shape tp-shapewrapper tp-lottie"
+								data-type="shape"
+								data-rsp_ch="on"
+								data-xy="xo:440px,440px,440px,80px;yo:401px,401px,401px,400px;"
+								data-text="w:normal;s:20,20,20,7;l:0,0,0,9;"
+								data-dim="w:142,142,142,126;h:85,85,85,75;"
+								data-btrans="rY:180;rZ:-10;"
+								data-frame_0="x:0,0,0,0px;y:0,0,0,0px;o:1;"
+								data-frame_1="x:0,0,0,0px;y:0,0,0,0px;st:3700;"
+								data-frame_999="o:0;st:w;sR:11700;"
+								data-lottie='{"jsonUrl":"https:\/\/bibabs.fr\/wp-content\/uploads\/revslider\/lottie\/objects\/lottiecustoms\/94116-arrow.json","duration":2169,"autoplay":true,"respectTlStart":true,"endlessLoop":false,"reverse":false,"repeat":-1,"type":"svg","size":"contain","progressiveLoad":false,"hideTransparent":false,"interType":"disabled","lerp":0,"easeType":"default","continuePlaying":false,"scrollActions":false,"scrollLerp":0.1000000000000000055511151231257827021181583404541015625,"editorEnabled":true,"meta":{"w":1736,"h":1137,"layers":{"layer1":{"refId":[],"fields":[{"type":"st","name":"Stroke 1","hasEffect":false,"level":3,"lKey":"layer1","val":[0,0,0,1],"timeBased":false,"stroke":46,"layer":"Shape Layer 2","path":"layers.0.shapes.0.it.2"}],"layerName":"Shape Layer 2","assetName":false},"layer2":{"refId":[],"fields":[{"type":"st","name":"Stroke 1","hasEffect":false,"level":3,"lKey":"layer2","val":[0,0,0,1],"timeBased":false,"stroke":46,"layer":"Shape Layer 1","path":"layers.1.shapes.0.it.2"}],"layerName":"Shape Layer 1","assetName":false}},"ef":false,"refs":[],"url":"https:\/\/bibabs.fr\/wp-content\/uploads\/revslider\/lottie\/objects\/lottiecustoms\/94116-arrow.json","changedGroup":{"colors":{"#a6626b":"#000000"},"strokes":[]}}}' 
+								style="z-index:26;"
+							> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-1-slide-11-layer-32" 
+								class="tp-shape tp-shapewrapper tp-lottie"
+								data-type="shape"
+								data-rsp_ch="on"
+								data-xy="xo:640px,640px,640px,280px;yo:401px,401px,401px,400px;"
+								data-text="w:normal;s:20,20,20,7;l:0,0,0,9;"
+								data-dim="w:142,142,142,126;h:85,85,85,75;"
+								data-btrans="rZ:20;"
+								data-frame_0="x:0,0,0,0px;y:0,0,0,0px;"
+								data-frame_1="x:0,0,0,0px;y:0,0,0,0px;st:3700;"
+								data-frame_999="o:0;st:w;sR:11700;"
+								data-lottie='{"jsonUrl":"https:\/\/bibabs.fr\/wp-content\/uploads\/revslider\/lottie\/objects\/lottiecustoms\/94116-arrow.json","duration":2169,"autoplay":true,"respectTlStart":true,"endlessLoop":false,"reverse":false,"repeat":-1,"type":"svg","size":"contain","progressiveLoad":false,"hideTransparent":false,"interType":"disabled","lerp":0,"easeType":"default","continuePlaying":false,"scrollActions":false,"scrollLerp":0.1000000000000000055511151231257827021181583404541015625,"editorEnabled":true,"meta":{"w":1736,"h":1137,"layers":{"layer1":{"refId":[],"fields":[{"type":"st","name":"Stroke 1","hasEffect":false,"level":3,"lKey":"layer1","val":[0,0,0,1],"timeBased":false,"stroke":46,"layer":"Shape Layer 2","path":"layers.0.shapes.0.it.2"}],"layerName":"Shape Layer 2","assetName":false},"layer2":{"refId":[],"fields":[{"type":"st","name":"Stroke 1","hasEffect":false,"level":3,"lKey":"layer2","val":[0,0,0,1],"timeBased":false,"stroke":46,"layer":"Shape Layer 1","path":"layers.1.shapes.0.it.2"}],"layerName":"Shape Layer 1","assetName":false}},"ef":false,"refs":[],"url":"https:\/\/bibabs.fr\/wp-content\/uploads\/revslider\/lottie\/objects\/lottiecustoms\/94116-arrow.json","changedGroup":{"colors":{"#a6626b":"#000000"},"strokes":[]}}}' 
+								style="z-index:25;"
+							> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-1-slide-11-layer-33" 
+								class="tp-shape tp-shapewrapper tp-lottie"
+								data-type="shape"
+								data-rsp_ch="on"
+								data-xy="xo:530px,530px,530px,180px;yo:491px,491px,491px,500px;"
+								data-text="w:normal;s:20,20,20,7;l:0,0,0,9;"
+								data-dim="w:142,142,142,122px;h:85,85,85,73px;"
+								data-frame_1="st:4500;"
+								data-frame_999="o:0;st:w;sR:11700;"
+								data-lottie='{"jsonUrl":"https:\/\/bibabs.fr\/wp-content\/uploads\/revslider\/lottie\/objects\/lottiecustoms\/95113-arrow-down.json","duration":2000,"autoplay":true,"respectTlStart":true,"endlessLoop":false,"reverse":false,"repeat":-1,"type":"svg","size":"contain","progressiveLoad":false,"hideTransparent":false,"interType":"disabled","lerp":0,"easeType":"default","continuePlaying":false,"scrollActions":false,"scrollLerp":0.1000000000000000055511151231257827021181583404541015625,"editorEnabled":true,"meta":{"w":1000,"h":1000,"layers":{"layer1":{"refId":[],"fields":[],"layerName":"Rotation","assetName":false},"layer2":{"refId":[],"fields":[{"type":"st","name":"Stroke 1","hasEffect":false,"level":3,"lKey":"layer2","val":[0.047058823529411764052809985514613799750804901123046875,0.0235294117647058820264049927573068998754024505615234375,0.0235294117647058820264049927573068998754024505615234375,1],"timeBased":false,"stroke":50,"layer":"Shape Layer 4","path":"layers.1.shapes.0.it.1"}],"layerName":"Shape Layer 4","assetName":false},"layer3":{"refId":[],"fields":[{"type":"st","name":"Stroke 1","hasEffect":false,"level":3,"lKey":"layer3","val":[0.047058823529411764052809985514613799750804901123046875,0.0235294117647058820264049927573068998754024505615234375,0.0235294117647058820264049927573068998754024505615234375,1],"timeBased":false,"stroke":50,"layer":"Shape Layer 2","path":"layers.2.shapes.0.it.1"}],"layerName":"Shape Layer 2","assetName":false},"layer4":{"refId":[],"fields":[{"type":"st","name":"Stroke 1","hasEffect":false,"level":3,"lKey":"layer4","val":[0.047058823529411764052809985514613799750804901123046875,0.0235294117647058820264049927573068998754024505615234375,0.0235294117647058820264049927573068998754024505615234375,1],"timeBased":false,"stroke":50,"layer":"Shape Layer 1","path":"layers.3.shapes.0.it.1"}],"layerName":"Shape Layer 1","assetName":false}},"ef":false,"refs":[],"changedGroup":{"colors":{"#558b6e":"#0c0606"},"strokes":{"74":50}},"url":"https:\/\/bibabs.fr\/wp-content\/uploads\/revslider\/lottie\/objects\/lottiecustoms\/95113-arrow-down.json","RSedited":true}}' 
+								style="z-index:24;"
+							> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-1-slide-11-layer-35" 
+								class="tp-shape tp-shapewrapper tp-lottie"
+								data-type="shape"
+								data-rsp_ch="on"
+								data-xy="xo:600px,600px,600px,240px;yo:619px,619px,619px,620px;"
+								data-text="w:normal;s:20,20,20,7;l:0,0,0,9;"
+								data-dim="w:171,171,171,151px;h:103,103,103,91px;"
+								data-btrans="rZ:-45;"
+								data-frame_1="st:5200;"
+								data-frame_999="o:0;st:w;sR:11700;"
+								data-lottie='{"jsonUrl":"https:\/\/bibabs.fr\/wp-content\/uploads\/revslider\/lottie\/objects\/lottiecustoms\/64932-arrow-slide-down (1).json","duration":1034,"autoplay":true,"respectTlStart":true,"endlessLoop":false,"reverse":false,"repeat":-1,"type":"svg","size":"contain","progressiveLoad":false,"hideTransparent":false,"interType":"disabled","lerp":0,"easeType":"default","continuePlaying":false,"scrollActions":false,"scrollLerp":0.1000000000000000055511151231257827021181583404541015625,"editorEnabled":true,"meta":false}' 
+								style="z-index:23;"
+							> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-1-slide-11-layer-36" 
+								class="tp-shape tp-shapewrapper tp-lottie"
+								data-type="shape"
+								data-rsp_ch="on"
+								data-xy="xo:433px,433px,433px,80px;yo:611px,611px,611px,620px;"
+								data-text="w:normal;s:20,20,20,7;l:0,0,0,9;"
+								data-dim="w:171,171,171,151px;h:103,103,103,91px;"
+								data-btrans="rZ:45;"
+								data-frame_1="st:5200;"
+								data-frame_999="o:0;st:w;sR:11700;"
+								data-lottie='{"jsonUrl":"https:\/\/bibabs.fr\/wp-content\/uploads\/revslider\/lottie\/objects\/lottiecustoms\/64932-arrow-slide-down (1).json","duration":1034,"autoplay":true,"respectTlStart":true,"endlessLoop":false,"reverse":false,"repeat":-1,"type":"svg","size":"contain","progressiveLoad":false,"hideTransparent":false,"interType":"disabled","lerp":0,"easeType":"default","continuePlaying":false,"scrollActions":false,"scrollLerp":0.1000000000000000055511151231257827021181583404541015625,"editorEnabled":true,"meta":false}' 
+								style="z-index:22;"
+							> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-1-slide-11-layer-37" 
+								class="tp-shape tp-shapewrapper tp-lottie"
+								data-type="shape"
+								data-rsp_ch="on"
+								data-xy="xo:620px,620px,620px,260px;yo:701px,701px,701px,700px;"
+								data-text="w:normal;s:20,20,20,7;l:0,0,0,9;"
+								data-dim="w:136,136,136,122px;h:81,81,81,73px;"
+								data-btrans="rZ:90;"
+								data-frame_1="st:6000;"
+								data-frame_999="o:0;st:w;sR:11700;"
+								data-lottie='{"jsonUrl":"https:\/\/bibabs.fr\/wp-content\/uploads\/revslider\/lottie\/objects\/lottiecustoms\/95113-arrow-down.json","duration":2000,"autoplay":true,"respectTlStart":true,"endlessLoop":false,"reverse":false,"repeat":-1,"type":"svg","size":"contain","progressiveLoad":false,"hideTransparent":false,"interType":"disabled","lerp":0,"easeType":"default","continuePlaying":false,"scrollActions":false,"scrollLerp":0.1000000000000000055511151231257827021181583404541015625,"editorEnabled":true,"meta":{"w":1000,"h":1000,"layers":{"layer1":{"refId":[],"fields":[],"layerName":"Rotation","assetName":false},"layer2":{"refId":[],"fields":[{"type":"st","name":"Stroke 1","hasEffect":false,"level":3,"lKey":"layer2","val":[0.047058823529411764052809985514613799750804901123046875,0.0235294117647058820264049927573068998754024505615234375,0.0235294117647058820264049927573068998754024505615234375,1],"timeBased":false,"stroke":50,"layer":"Shape Layer 4","path":"layers.1.shapes.0.it.1"}],"layerName":"Shape Layer 4","assetName":false},"layer3":{"refId":[],"fields":[{"type":"st","name":"Stroke 1","hasEffect":false,"level":3,"lKey":"layer3","val":[0.047058823529411764052809985514613799750804901123046875,0.0235294117647058820264049927573068998754024505615234375,0.0235294117647058820264049927573068998754024505615234375,1],"timeBased":false,"stroke":50,"layer":"Shape Layer 2","path":"layers.2.shapes.0.it.1"}],"layerName":"Shape Layer 2","assetName":false},"layer4":{"refId":[],"fields":[{"type":"st","name":"Stroke 1","hasEffect":false,"level":3,"lKey":"layer4","val":[0.047058823529411764052809985514613799750804901123046875,0.0235294117647058820264049927573068998754024505615234375,0.0235294117647058820264049927573068998754024505615234375,1],"timeBased":false,"stroke":50,"layer":"Shape Layer 1","path":"layers.3.shapes.0.it.1"}],"layerName":"Shape Layer 1","assetName":false}},"ef":false,"refs":[],"changedGroup":{"colors":{"#558b6e":"#0c0606"},"strokes":{"74":50}},"url":"https:\/\/bibabs.fr\/wp-content\/uploads\/revslider\/lottie\/objects\/lottiecustoms\/95113-arrow-down.json","RSedited":true}}' 
+								style="z-index:21;"
+							> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-1-slide-11-layer-38" 
+								class="tp-shape tp-shapewrapper tp-lottie"
+								data-type="shape"
+								data-rsp_ch="on"
+								data-xy="xo:450px,450px,450px,100px;yo:701px,701px,701px,700px;"
+								data-text="w:normal;s:20,20,20,7;l:0,0,0,9;"
+								data-dim="w:136,136,136,122px;h:81,81,81,73px;"
+								data-btrans="rZ:-90;"
+								data-frame_0="x:0,0,0,0px;y:0,0,0,0px;"
+								data-frame_1="x:0,0,0,0px;y:0,0,0,0px;st:6000;"
+								data-frame_999="o:0;st:w;sR:11700;"
+								data-lottie='{"jsonUrl":"https:\/\/bibabs.fr\/wp-content\/uploads\/revslider\/lottie\/objects\/lottiecustoms\/95113-arrow-down.json","duration":2000,"autoplay":true,"respectTlStart":true,"endlessLoop":false,"reverse":false,"repeat":-1,"type":"svg","size":"contain","progressiveLoad":false,"hideTransparent":false,"interType":"disabled","lerp":0,"easeType":"default","continuePlaying":false,"scrollActions":false,"scrollLerp":0.1000000000000000055511151231257827021181583404541015625,"editorEnabled":true,"meta":{"w":1000,"h":1000,"layers":{"layer1":{"refId":[],"fields":[],"layerName":"Rotation","assetName":false},"layer2":{"refId":[],"fields":[{"type":"st","name":"Stroke 1","hasEffect":false,"level":3,"lKey":"layer2","val":[0.047058823529411764052809985514613799750804901123046875,0.0235294117647058820264049927573068998754024505615234375,0.0235294117647058820264049927573068998754024505615234375,1],"timeBased":false,"stroke":50,"layer":"Shape Layer 4","path":"layers.1.shapes.0.it.1"}],"layerName":"Shape Layer 4","assetName":false},"layer3":{"refId":[],"fields":[{"type":"st","name":"Stroke 1","hasEffect":false,"level":3,"lKey":"layer3","val":[0.047058823529411764052809985514613799750804901123046875,0.0235294117647058820264049927573068998754024505615234375,0.0235294117647058820264049927573068998754024505615234375,1],"timeBased":false,"stroke":50,"layer":"Shape Layer 2","path":"layers.2.shapes.0.it.1"}],"layerName":"Shape Layer 2","assetName":false},"layer4":{"refId":[],"fields":[{"type":"st","name":"Stroke 1","hasEffect":false,"level":3,"lKey":"layer4","val":[0.047058823529411764052809985514613799750804901123046875,0.0235294117647058820264049927573068998754024505615234375,0.0235294117647058820264049927573068998754024505615234375,1],"timeBased":false,"stroke":50,"layer":"Shape Layer 1","path":"layers.3.shapes.0.it.1"}],"layerName":"Shape Layer 1","assetName":false}},"ef":false,"refs":[],"changedGroup":{"colors":{"#558b6e":"#0c0606"},"strokes":{"74":50}},"url":"https:\/\/bibabs.fr\/wp-content\/uploads\/revslider\/lottie\/objects\/lottiecustoms\/95113-arrow-down.json","RSedited":true}}' 
+								style="z-index:20;"
+							> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-1-slide-11-layer-39" 
+								class="tp-shape tp-shapewrapper tp-lottie"
+								data-type="shape"
+								data-rsp_ch="on"
+								data-xy="xo:530px,530px,530px,185px;yo:781px,781px,781px,768px;"
+								data-text="w:normal;s:20,20,20,7;l:0,0,0,9;"
+								data-dim="w:141,141,141,110px;h:85,85,85,66px;"
+								data-frame_1="st:6800;"
+								data-frame_999="o:0;st:w;sR:11700;"
+								data-lottie='{"jsonUrl":"https:\/\/bibabs.fr\/wp-content\/uploads\/revslider\/lottie\/objects\/lottiecustoms\/95113-arrow-down.json","duration":2000,"autoplay":true,"respectTlStart":true,"endlessLoop":false,"reverse":false,"repeat":-1,"type":"svg","size":"contain","progressiveLoad":false,"hideTransparent":false,"interType":"disabled","lerp":0,"easeType":"default","continuePlaying":false,"scrollActions":false,"scrollLerp":0.1000000000000000055511151231257827021181583404541015625,"editorEnabled":true,"meta":{"w":1000,"h":1000,"layers":{"layer1":{"refId":[],"fields":[],"layerName":"Rotation","assetName":false},"layer2":{"refId":[],"fields":[{"type":"st","name":"Stroke 1","hasEffect":false,"level":3,"lKey":"layer2","val":[0.047058823529411764052809985514613799750804901123046875,0.0235294117647058820264049927573068998754024505615234375,0.0235294117647058820264049927573068998754024505615234375,1],"timeBased":false,"stroke":50,"layer":"Shape Layer 4","path":"layers.1.shapes.0.it.1"}],"layerName":"Shape Layer 4","assetName":false},"layer3":{"refId":[],"fields":[{"type":"st","name":"Stroke 1","hasEffect":false,"level":3,"lKey":"layer3","val":[0.047058823529411764052809985514613799750804901123046875,0.0235294117647058820264049927573068998754024505615234375,0.0235294117647058820264049927573068998754024505615234375,1],"timeBased":false,"stroke":50,"layer":"Shape Layer 2","path":"layers.2.shapes.0.it.1"}],"layerName":"Shape Layer 2","assetName":false},"layer4":{"refId":[],"fields":[{"type":"st","name":"Stroke 1","hasEffect":false,"level":3,"lKey":"layer4","val":[0.047058823529411764052809985514613799750804901123046875,0.0235294117647058820264049927573068998754024505615234375,0.0235294117647058820264049927573068998754024505615234375,1],"timeBased":false,"stroke":50,"layer":"Shape Layer 1","path":"layers.3.shapes.0.it.1"}],"layerName":"Shape Layer 1","assetName":false}},"ef":false,"refs":[],"changedGroup":{"colors":{"#558b6e":"#0c0606"},"strokes":{"74":50}},"url":"https:\/\/bibabs.fr\/wp-content\/uploads\/revslider\/lottie\/objects\/lottiecustoms\/95113-arrow-down.json","RSedited":true}}' 
+								style="z-index:19;"
+							> 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-1-slide-11-layer-40" 
+								data-type="text"
+								data-color="#000000"
+								data-rsp_ch="on"
+								data-xy="xo:600px,600px,600px,240px;yo:148px,148px,148px,153px;"
+								data-text="w:normal;s:30,30,30,20;l:30,30,30,20;"
+								data-frame_0="o:1;"
+								data-frame_0_chars="d:5;x:-105%;o:0;rZ:-90deg;"
+								data-frame_0_mask="u:t;"
+								data-frame_1_chars="e:power4.inOut;dir:backward;d:10;rZ:0deg;"
+								data-frame_1_mask="u:t;"
+								data-frame_999="o:0;st:11900;sR:11500;"
+								style="z-index:41;font-family:'Roboto';"
+							>1 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-1-slide-11-layer-41" 
+								data-type="text"
+								data-color="#000000"
+								data-rsp_ch="on"
+								data-xy="xo:500px,500px,500px,140px;yo:181px,181px,181px,180px;"
+								data-text="w:normal;s:30,30,30,20;l:30,30,30,20;"
+								data-frame_0="o:1;"
+								data-frame_0_chars="d:5;x:-105%;o:0;rZ:-90deg;"
+								data-frame_0_mask="u:t;"
+								data-frame_1="st:800;"
+								data-frame_1_chars="e:power4.inOut;dir:backward;d:10;rZ:0deg;"
+								data-frame_1_mask="u:t;"
+								data-frame_999="o:0;st:11900;sR:11400;"
+								style="z-index:40;font-family:'Roboto';"
+							>2 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-1-slide-11-layer-42" 
+								data-type="text"
+								data-color="#000000"
+								data-rsp_ch="on"
+								data-xy="xo:500px,500px,500px,140px;yo:332px,332px,332px,340px;"
+								data-text="w:normal;s:30,30,30,20;l:30,30,30,20;"
+								data-frame_0="o:1;"
+								data-frame_0_chars="d:5;x:-105%;o:0;rZ:-90deg;"
+								data-frame_0_mask="u:t;"
+								data-frame_1="st:1600;"
+								data-frame_1_chars="e:power4.inOut;dir:backward;d:10;rZ:0deg;"
+								data-frame_1_mask="u:t;"
+								data-frame_999="o:0;st:11900;sR:11400;"
+								style="z-index:39;font-family:'Roboto';"
+							>3 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-1-slide-11-layer-43" 
+								data-type="text"
+								data-color="#000000"
+								data-rsp_ch="on"
+								data-xy="xo:690px,690px,690px,320px;yo:179px,179px,179px,180px;"
+								data-text="w:normal;s:30,30,30,20;l:30,30,30,20;"
+								data-frame_0="o:1;"
+								data-frame_0_chars="d:5;x:-105%;o:0;rZ:-90deg;"
+								data-frame_0_mask="u:t;"
+								data-frame_1="st:2400;"
+								data-frame_1_chars="e:power4.inOut;dir:backward;d:10;rZ:0deg;"
+								data-frame_1_mask="u:t;"
+								data-frame_999="o:0;st:11900;sR:11400;"
+								style="z-index:38;font-family:'Roboto';"
+							>4 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-1-slide-11-layer-44" 
+								data-type="text"
+								data-color="#000000"
+								data-rsp_ch="on"
+								data-xy="xo:690px,690px,690px,320px;yo:332px,332px,332px,340px;"
+								data-text="w:normal;s:30,30,30,20;l:30,30,30,20;"
+								data-frame_0="o:1;"
+								data-frame_0_chars="d:5;x:-105%;o:0;rZ:-90deg;"
+								data-frame_0_mask="u:t;"
+								data-frame_1="x:-1px,-1px,-1px,0px;st:3200;"
+								data-frame_1_chars="e:power4.inOut;dir:backward;d:10;rZ:0deg;"
+								data-frame_1_mask="u:t;"
+								data-frame_999="o:0;st:11900;sR:11400;"
+								style="z-index:37;font-family:'Roboto';"
+							>5 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-1-slide-11-layer-45" 
+								data-type="text"
+								data-color="#000000"
+								data-rsp_ch="on"
+								data-xy="xo:600px,600px,600px,229px;yo:371px,371px,371px,370px;"
+								data-text="w:normal;s:30,30,30,20;l:30,30,30,20;"
+								data-dim="w:30.850700000000003px,30.850700000000003px,30.850700000000003px,auto;"
+								data-frame_0="o:1;"
+								data-frame_0_chars="d:5;x:-105%;o:0;rZ:-90deg;"
+								data-frame_0_mask="u:t;"
+								data-frame_1="st:4000;"
+								data-frame_1_chars="e:power4.inOut;dir:backward;d:10;rZ:0deg;"
+								data-frame_1_mask="u:t;"
+								data-frame_999="o:0;st:11900;sR:11400;"
+								style="z-index:36;font-family:'Roboto';"
+							>6 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-1-slide-11-layer-46" 
+								data-type="text"
+								data-color="#000000"
+								data-rsp_ch="on"
+								data-xy="xo:530px,530px,530px,170px;yo:601px,601px,601px,600px;"
+								data-text="w:normal;s:30,30,30,20;l:30,30,30,20;"
+								data-frame_0="o:1;"
+								data-frame_0_chars="d:5;x:-105%;o:0;rZ:-90deg;"
+								data-frame_0_mask="u:t;"
+								data-frame_1="st:4800;"
+								data-frame_1_chars="e:power4.inOut;dir:backward;d:10;rZ:0deg;"
+								data-frame_1_mask="u:t;"
+								data-frame_999="o:0;st:11900;sR:11400;"
+								style="z-index:35;font-family:'Roboto';"
+							>7 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-1-slide-11-layer-47" 
+								data-type="text"
+								data-color="#000000"
+								data-rsp_ch="on"
+								data-xy="xo:372px,372px,372px,60px;yo:721px,721px,721px,785px;"
+								data-text="w:normal;s:30,30,30,20;l:30,30,30,20;"
+								data-frame_0="o:1;"
+								data-frame_0_chars="d:5;x:-105%;o:0;rZ:-90deg;"
+								data-frame_0_mask="u:t;"
+								data-frame_1="st:5500;"
+								data-frame_1_chars="e:power4.inOut;dir:backward;d:10;rZ:0deg;"
+								data-frame_1_mask="u:t;"
+								data-frame_999="o:0;st:11900;sR:11400;"
+								style="z-index:34;font-family:'Roboto';"
+							>8 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-1-slide-11-layer-48" 
+								data-type="text"
+								data-color="#000000"
+								data-rsp_ch="on"
+								data-xy="xo:540px,540px,540px,185px;yo:781px,781px,781px,774px;"
+								data-text="w:normal;s:30,30,30,20;l:30,30,30,20;"
+								data-frame_0="o:1;"
+								data-frame_0_chars="d:5;x:-105%;o:0;rZ:-90deg;"
+								data-frame_0_mask="u:t;"
+								data-frame_1="st:6300;"
+								data-frame_1_chars="e:power4.inOut;dir:backward;d:10;rZ:0deg;"
+								data-frame_1_mask="u:t;"
+								data-frame_999="o:0;st:11900;sR:11400;"
+								style="z-index:32;font-family:'Roboto';"
+							>10 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-1-slide-11-layer-49" 
+								data-type="text"
+								data-color="#000000"
+								data-rsp_ch="on"
+								data-xy="xo:820px,820px,820px,390px;yo:711px,711px,711px,791px;"
+								data-text="w:normal;s:30,30,30,20;l:30,30,30,20;"
+								data-frame_0="o:1;"
+								data-frame_0_chars="d:5;x:-105%;o:0;rZ:-90deg;"
+								data-frame_0_mask="u:t;"
+								data-frame_1="st:5500;"
+								data-frame_1_chars="e:power4.inOut;dir:backward;d:10;rZ:0deg;"
+								data-frame_1_mask="u:t;"
+								data-frame_999="o:0;st:11900;sR:11400;"
+								style="z-index:33;font-family:'Roboto';"
+							>9<br />
+ 
+							</rs-layer><!--
+
+							--><rs-layer
+								id="slider-1-slide-11-layer-50" 
+								data-type="text"
+								data-color="#000000"
+								data-rsp_ch="on"
+								data-xy="xo:517px,517px,517px,162px;yo:901px,901px,901px,870px;"
+								data-text="w:normal;s:30,30,30,20;l:30,30,30,20;"
+								data-frame_0="o:1;"
+								data-frame_0_chars="d:5;x:-105%;o:0;rZ:-90deg;"
+								data-frame_0_mask="u:t;"
+								data-frame_1="st:7100;"
+								data-frame_1_chars="e:power4.inOut;dir:backward;d:10;rZ:0deg;"
+								data-frame_1_mask="u:t;"
+								data-frame_999="o:0;st:11900;sR:11400;"
+								style="z-index:31;font-family:'Roboto';"
+							>11 
+							</rs-layer><!--
+-->						</rs-slide>
+					</rs-slides>
+				</rs-module>
+				<script>
+					
+				</script>
+<script>
+		if(typeof revslider_showDoubleJqueryError === "undefined") {function revslider_showDoubleJqueryError(sliderID) {console.log("You have some jquery.js library include that comes after the Slider Revolution files js inclusion.");console.log("To fix this, you can:");console.log("1. Set 'Module General Options' -> 'Advanced' -> 'jQuery & OutPut Filters' -> 'Put JS to Body' to on");console.log("2. Find the double jQuery.js inclusion and remove it");return "Double Included jQuery Library";}}
+</script>
+			</rs-module-wrap>
+			<!-- END REVOLUTION SLIDER -->
+
+				<script>
+					var	tpj = jQuery;
+					if(window.RS_MODULES === undefined) window.RS_MODULES = {};
+					if(RS_MODULES.modules === undefined) RS_MODULES.modules = {};
+					RS_MODULES.modules["revslider11"] = {once: RS_MODULES.modules["revslider11"]!==undefined ? RS_MODULES.modules["revslider11"].once : undefined, init:function() {
+						window.revapi1 = window.revapi1===undefined || window.revapi1===null || window.revapi1.length===0  ? document.getElementById("rev_slider_1_1") : window.revapi1;
+						if(window.revapi1 === null || window.revapi1 === undefined || window.revapi1.length==0) { window.revapi1initTry = window.revapi1initTry ===undefined ? 0 : window.revapi1initTry+1; if (window.revapi1initTry<20) requestAnimationFrame(function() {RS_MODULES.modules["revslider11"].init()}); return;}
+						window.revapi1 = jQuery(window.revapi1);
+						if(window.revapi1.revolution==undefined){ revslider_showDoubleJqueryError("rev_slider_1_1"); return;}
+						revapi1.revolutionInit({
+								revapi:"revapi1",
+								DPR:"dpr",
+								duration:"12000ms",
+								visibilityLevels:"1240,1240,1240,480",
+								gridwidth:"1250,1250,1250,480",
+								gridheight:"1050,1050,1050,1000",
+								spinner:"spinner7",
+								perspective:600,
+								perspectiveType:"global",
+								spinnerclr:"#5ac8fa",
+								editorheight:"1050,768,777.988,1000",
+								responsiveLevels:"1240,1240,1240,480",
+								progressBar:{disableProgressBar:true},
+								navigation: {
+									onHoverStop:false
+								},
+								parallax: {
+									levels:[5,10,15,20,25,30,35,40,45,46,47,48,49,50,51,30],
+									type:"scroll",
+									origo:"slidercenter",
+									speed:0
+								},
+								scrolleffect: {
+									set:true,
+									multiplicator:1.3,
+									multiplicator_layers:1.3
+								},
+								viewPort: {
+									global:false,
+									globalDist:"-200px",
+									enable:false
+								},
+								fallbacks: {
+									allowHTML5AutoPlayOnAndroid:true
+								},
+						});
+						
+						LottieAddOn(jQuery, revapi1, false);
+
+					}} // End of RevInitScript
+					if (window.RS_MODULES.checkMinimal!==undefined) { window.RS_MODULES.checkMinimal();};
+				</script>
+
+
+
+		</body>
+				</html>
+		
